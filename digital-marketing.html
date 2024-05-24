@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplelearn // Web Development // Basics of digital marketing</title>
+    <link rel="icon" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        iframe {
+            width: 800px;
+            height: 400px;
+            border: 2px solid rgb(93, 91, 91);
+        }
+        @media (max-width: 789px) {
+            iframe {
+                height: 200px;
+                width: 250px;
+            }
+        }
+        h1 {
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .html, #quiz-container, #results-container, .interview-questions{
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="main.html" title="Simple Learn Home">
+                <img src="logo.png" alt="Logo" title="Simple Learn Home" width="30" height="24" class="d-inline-block align-text-top">
+                Welcome
+            </a>
+        </div>
+    </nav>
+    <div class="html">
+        <h1>Digital Marketing Tutorial</h1>
+        <h2>What Is Digital Marketing?</h2>
+        <p>Digital marketing encompasses all marketing efforts that use electronic devices or the internet. Businesses leverage digital channels such as search engines, social media, email, websites, and other online platforms to connect with current and prospective customers. This form of marketing extends beyond traditional marketing methods, allowing for more targeted and measurable strategies. Key components of digital marketing include search engine optimization (SEO), content marketing, social media marketing, email marketing, and online advertising. The ultimate goal is to promote brands, products, or services to generate leads, increase sales, and build brand awareness in the digital realm.</p>
+        <h2>Why learn Digital Marketing?</h2>
+        <p>The reasons why to learn Digital Marketing.</p>
+        <ol>
+            <li><b>In-Demand Skill:</b> Digital marketing skills are in high demand across industries as businesses increasingly rely on online channels to reach and engage their target audiences. Acquiring these skills can enhance your employability and open up various job opportunities.</li>
+            <li><b>Versatility</b>: Digital marketing encompasses various disciplines such as SEO, social media marketing, email marketing, content marketing, and more. Learning digital marketing provides you with a versatile skill set that can be applied to different roles and industries.</li>
+            <li><b>Cost-Effective Marketing:</b> Compared to traditional marketing methods, digital marketing often offers a higher return on investment (ROI) and can be more cost-effective, especially for small businesses and startups with limited budgets.</li>
+            <li><b>Targeted Reach:</b> Digital marketing allows you to target specific demographics, interests, and behaviors, enabling you to reach your ideal audience more effectively than traditional marketing methods.</li>
+        </ol>
+        <div class="ratio ratio-16x9">
+            <img src="https://www.reliablesoft.net/wp-content/uploads/2023/03/digital-marketing-definition-new.png" alt="HTML">
+        </div><br><br>
+        <h2>Digital Marketing Video Tutorial</h2><br>
+        <div class="ratio ratio-16x9">>
+            <iframe src="https://www.youtube.com/embed/qFa9yYQo5Mk?si=AVjKP0vl63mrh8T3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </div>
+    <div id="quiz-container">
+        <h2>Digital Marketing Quiz</h2>
+        <button id="start-btn" class="btn btn-success">Start Quiz</button>
+        <div id="quiz-content" style="display: none;">
+            <span>Timer: </span><span id="timer">00:00</span><br><br>
+            <div id="question1" data-question-number="1">
+                <p>1. What is SEO?</p>
+                <input type="radio" name="q1" value="A"> A. Search Engine Optimization.<br>
+                <input type="radio" name="q1" value="B"> B. Social Engagement Optimization.<br>
+                <input type="radio" name="q1" value="C"> C. Sales Enhancement Opportunity.<br>
+            </div><br>
+            
+            <div id="question2" data-question-number="2">
+                <p>2. What does CPC stand for?</p>
+                <input type="radio" name="q2" value="A"> A. Cost Per Click.<br>
+                <input type="radio" name="q2" value="B"> B. Click Per Conversion.<br>
+                <input type="radio" name="q2" value="C"> C. Cost Per Conversion.<br>
+            </div><br>
+            
+            <div id="question3" data-question-number="3">
+                <p>3. What is the primary goal of email marketing?</p>
+                <input type="radio" name="q3" value="A"> A. Lead generation.<br>
+                <input type="radio" name="q3" value="B"> B. Direct sales.<br>
+                <input type="radio" name="q3" value="C"> C. Building customer relationships.<br>
+            </div><br>
+            
+            <div id="question4" data-question-number="4">
+                <p>4. What is the purpose of A/B testing?</p>
+                <input type="radio" name="q4" value="A"> A. To compare two versions of a webpage or app to see which one performs better.<br>
+                <input type="radio" name="q4" value="B"> B. To track user behavior on a website.<br>
+                <input type="radio" name="q4" value="C"> C. To analyze social media engagement.<br>
+            </div><br>
+            
+            <div id="question5" data-question-number="5">
+                <p>5. What is the significance of a conversion funnel in digital marketing?</p>
+                <input type="radio" name="q5" value="A"> A. It represents the journey a user takes towards completing a desired action on a website.<br>
+                <input type="radio" name="q5" value="B"> B. It measures the number of visitors to a website.<br>
+                <input type="radio" name="q5" value="C"> C. It assesses the effectiveness of email campaigns.<br>
+            </div><br>
+            
+            <div id="question6" data-question-number="6">
+                <p>6. What is the purpose of Google Analytics?</p>
+                <input type="radio" name="q6" value="A"> A. To track and analyze website traffic and user behavior.<br>
+                <input type="radio" name="q6" value="B"> B. To manage social media campaigns.<br>
+                <input type="radio" name="q6" value="C"> C. To create ad campaigns.<br>
+            </div><br>
+            
+            <div id="question7" data-question-number="7">
+                <p>7. What is the primary goal of content marketing?</p>
+                <input type="radio" name="q7" value="A"> A. To attract and engage a target audience.<br>
+                <input type="radio" name="q7" value="B"> B. To increase website traffic.<br>
+                <input type="radio" name="q7" value="C"> C. To promote products directly.<br>
+            </div><br>
+            
+            <div id="question8" data-question-number="8">
+                <p>8. What does CTR stand for?</p>
+                <input type="radio" name="q8" value="A"> A. Click-Through Rate.<br>
+                <input type="radio" name="q8" value="B"> B. Conversion Tracking Ratio.<br>
+                <input type="radio" name="q8" value="C"> C. Customer Targeting Reach.<br>
+            </div><br>
+            
+            <div id="question9" data-question-number="9">
+                <p>9. What is the purpose of social media marketing?</p>
+                <input type="radio" name="q9" value="A"> A. To build brand awareness and engage with customers.<br>
+                <input type="radio" name="q9" value="B"> B. To directly sell products.<br>
+                <input type="radio" name="q9" value="C"> C. To improve website ranking on search engines.<br>
+            </div><br>
+            
+            <div id="question10" data-question-number="10">
+                <p>10. What is the difference between SEO and SEM?</p>
+                <input type="radio" name="q10" value="A"> A. SEO focuses on organic search results, while SEM includes paid advertising.<br>
+                <input type="radio" name="q10" value="B"> B. SEO is specific to social media platforms, while SEM is for search engines.<br>
+                <input type="radio" name="q10" value="C"> C. There is no difference between SEO and SEM.<br>
+            </div><br>
+            
+            <div id="question11" data-question-number="11">
+                <p>11. What is the significance of responsive web design in digital marketing?</p>
+                <input type="radio" name="q11" value="A"> A. It ensures that websites are optimized for viewing on various devices, improving user experience.<br>
+                <input type="radio" name="q11" value="B"> B. It focuses on improving website loading speed.<br>
+                <input type="radio" name="q11" value="C"> C. It enhances website security.<br>
+            </div><br>
+            
+            <div id="question12" data-question-number="12">
+                <p>12. What is the purpose of customer segmentation in digital marketing?</p>
+                <input type="radio" name="q12" value="A"> A. To divide the target audience into smaller groups based on demographics, interests, or behavior.<br>
+                <input type="radio" name="q12" value="B"> B. To increase overall website traffic.<br>
+                <input type="radio" name="q12" value="C"> C. To improve website design.<br>
+            </div><br>
+            
+            <div id="question13" data-question-number="13">
+                <p>13. What is the role of influencer marketing in digital marketing strategies?</p>
+                <input type="radio" name="q13" value="A"> A. To leverage the influence of individuals with a large following to promote products or services.<br>
+                <input type="radio" name="q13" value="B"> B. To manage customer complaints.<br>
+                <input type="radio" name="q13" value="C"> C. To optimize website content.<br>
+            </div><br>
+            
+            <div id="question14" data-question-number="14">
+                <p>14. What is the purpose of a call-to-action (CTA) in digital marketing?</p>
+                <input type="radio" name="q14" value="A"> A. To prompt users to take a specific action, such as making a purchase or signing up for a newsletter.<br>
+                <input type="radio" name="q14" value="B"> B. To display advertisements.<br>
+                <input type="radio" name="q14" value="C"> C. To monitor website traffic.<br>
+            </div><br>
+            
+            <div id="question15" data-question-number="15">
+                <p>15. What are key performance indicators (KPIs) in digital marketing?</p>
+                <input type="radio" name="q15" value="A"> A. Metrics used to measure the success of marketing efforts, such as website traffic, conversion rates, and engagement levels.<br>
+                <input type="radio" name="q15" value="B"> B. Techniques used to improve search engine rankings.<br>
+                <input type="radio" name="q15" value="C"> C. Social media platforms.<br>
+            </div><br>
+            
+            <div id="question16" data-question-number="16">
+                <p>16. What is the purpose of a landing page in digital marketing?</p>
+                <input type="radio" name="q16" value="A"> A. To capture visitor information and encourage a specific action, such as completing a form or making a purchase.<br>
+                <input type="radio" name="q16" value="B"> B. To provide general information about a company.<br>
+                <input type="radio" name="q16" value="C"> C. To display a portfolio of products or services.<br>
+            </div><br>
+            
+            <div id="question17" data-question-number="17">
+                <p>17. What is the significance of social media analytics in digital marketing?</p>
+                <input type="radio" name="q17" value="A"> A. To track and analyze performance metrics on social media platforms, such as engagement, reach, and follower growth.<br>
+                <input type="radio" name="q17" value="B"> B. To create advertising campaigns.<br>
+                <input type="radio" name="q17" value="C"> C. To design website layouts.<br>
+            </div><br>
+            
+            <div id="question18" data-question-number="18">
+                <p>18. What is the purpose of lead nurturing in digital marketing?</p>
+                <input type="radio" name="q18" value="A"> A. To build relationships with potential customers and guide them through the sales funnel.<br>
+                <input type="radio" name="q18" value="B"> B. To increase website traffic.<br>
+                <input type="radio" name="q18" value="C"> C. To improve search engine rankings.<br>
+            </div><br>
+            
+            <div id="question19" data-question-number="19">
+                <p>19. What is the role of email segmentation in email marketing?</p>
+                <input type="radio" name="q19" value="A"> A. To divide the email subscriber list into smaller groups based on demographics, behavior, or interests.<br>
+                <input type="radio" name="q19" value="B"> B. To automate email responses.<br>
+                <input type="radio" name="q19" value="C"> C. To design email templates.<br>
+            </div><br>
+            
+            <div id="question20" data-question-number="20">
+                <p>20. What is the purpose of remarketing in digital advertising?</p>
+                <input type="radio" name="q20" value="A"> A. To target users who have previously visited a website or interacted with a brand but did not complete a desired action.<br>
+                <input type="radio" name="q20" value="B"> B. To create brand awareness.<br>
+                <input type="radio" name="q20" value="C"> C. To improve website design.<br>
+            </div><br>
+            
+            <div class="d-flex justify-content-center align-items-center">
+                <button id="submit-btn" class="btn btn-info">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div id="results-container" style="display: none;">
+        <h2>Results</h2>
+        <p id="correct-answers">Correct Answers: 0</p>
+        <p id="total-questions">Total Questions: 0</p>
+        <p id="time-taken">Time Taken: 00:00</p>
+        <div id="results"></div>
+        <p id="brilent" style="display: none;">Your are wonderful......</p>
+    </div>
+    <div class="interview-questions">
+        <h2>Additional Digital Marketing Interview Questions</h2>
+        <ol>
+            <li>What is digital marketing, and why is it important?</li>
+            <li>Can you explain the difference between SEO and SEM?</li>
+            <li>How do you approach keyword research for SEO?</li>
+            <li>What are the key components of an effective social media strategy?</li>
+            <li>How do you measure the success of a digital marketing campaign?</li>
+            <li>What is the importance of content marketing in digital marketing?</li>
+            <li>What is the significance of A/B testing in digital marketing?</li>
+            <li>How would you increase website traffic organically?</li>
+            <li>Can you explain the concept of the buyer's journey and its relevance to digital marketing?</li>
+            <li>How do you stay updated with the latest trends and developments in digital marketing?</li>
+        </ol>
+        <button id="click-show" class="btn btn-danger" onclick="toggleAnswers()">
+            Show answers
+        </button> <br>
+    <div id="show-answers" style="display: none;"><br><br>
+        <h2>Interview questions with answers</h2>
+        <ol>
+            <li><b>What is digital marketing, and why is it important?</b></li>
+            <ul>
+                <li>Digital marketing involves promoting products or services using digital channels such as the internet, social media, search engines, email, and mobile apps. It's important because it allows businesses to reach their target audience more effectively, increase brand visibility, generate leads, and drive sales in a cost-efficient manner compared to traditional marketing methods.</li>
+            </ul>
+            <li><b>Can you explain the difference between SEO and SEM?</b></li>
+            <ul>
+                <li> SEO (Search Engine Optimization) involves optimizing a website to improve its visibility in organic search engine results. SEM (Search Engine Marketing), on the other hand, encompasses paid advertising strategies to increase a website's visibility in search engine results pages (SERPs). While SEO focuses on optimizing for organic traffic, SEM involves paid methods like Google Ads.</li>
+            </ul>
+            <li><b>How do you approach keyword research for SEO?</b></li>
+            <ul>
+                <li>Keyword research involves identifying relevant search terms that users enter into search engines. I start by brainstorming potential keywords related to the business or industry. Then, I use keyword research tools like Google Keyword Planner or SEMrush to analyze search volume, competition, and relevancy of these keywords. I prioritize keywords based on their search volume and relevance to the website's content and audience.</li>
+            </ul>
+            <li><b>What are the key components of an effective social media strategy?</b></li>
+            <ul>
+                <p>An effective social media strategy includes:</p>
+                <li>Setting clear goals and objectives</li>
+                <li>Identifying target audience demographics and preferences</li>
+                <li>Creating engaging content tailored to each social media platform</li>
+                <li>Establishing a consistent posting schedule</li>
+                <li>Engaging with the audience through comments, messages, and shares</li>
+                <li>Analyzing performance metrics and adjusting strategies accordingly</li>
+            </ul>
+            <li><b>How do you measure the success of a digital marketing campaign?</b></li>
+            <ul>
+                <p>The success of a digital marketing campaign can be measured using various metrics such as:</p>
+                <li>Website traffic and conversions</li>
+                <li>Click-through rates (CTRs) for ads</li>
+                <li>Engagement metrics on social media (likes, shares, comments)</li>
+                <li>Email open rates and click-through rates</li>
+                <li>Return on Investment (ROI) or cost per acquisition (CPA)</li>
+                <li>Conversion rates for specific goals (e.g., sales, sign-ups)</li>
+                <p>Analyzing these metrics helps determine the effectiveness of the campaign and identify areas for improvement.</p>
+            </ul>
+            <li><b>What is the importance of content marketing in digital marketing?</b></li>
+            <ul>
+                <li>Content marketing is essential because it allows businesses to provide valuable, relevant, and engaging content to their target audience. It helps build brand credibility, establish thought leadership, improve SEO, and drive customer engagement and loyalty. By creating high-quality content that addresses the needs and interests of their audience, businesses can attract and retain customers effectively.</li>
+            </ul>
+            <li><b>What is the significance of A/B testing in digital marketing?</b></li>
+            <ul>
+                <li>A/B testing, also known as split testing, is crucial in digital marketing because it allows marketers to compare two versions of a webpage, email, ad, or other marketing asset to determine which one performs better. By testing different elements such as headlines, images, calls-to-action, or layouts, marketers can gather data-driven insights to optimize conversion rates and improve overall campaign performance.</li>
+            </ul>
+            <li><b>How would you increase website traffic organically?</b></li>
+            <ul>
+                <p>To increase website traffic organically, I would focus on:</p>
+                <li>Creating high-quality, relevant content optimized for target keywords</li>
+                <li>Improving website usability and user experience</li>
+                <li>Building backlinks from reputable websites through outreach and networking</li>
+                <li>Optimizing meta tags, headers, and other on-page elements for search engines</li>
+                <li>Promoting content through social media and email marketing</li>
+                <li>Monitoring website performance and making continuous improvements based on analytics data.</li>
+            </ul>
+            <li><b>Can you explain the concept of the buyer's journey and its relevance to digital marketing?</b></li>
+            <ul>
+                <li>The buyer's journey refers to the process that a potential customer goes through before making a purchase decision. It typically consists of three stages: awareness, consideration, and decision. In digital marketing, understanding the buyer's journey is crucial for creating targeted content and campaigns that address the needs and concerns of prospects at each stage. By aligning marketing efforts with the buyer's journey, businesses can effectively nurture leads and guide them towards making a purchase.</li>
+            </ul>
+            <li><b>How do you stay updated with the latest trends and developments in digital marketing?</b></li>
+            <ul>
+                <p>I stay updated with the latest trends and developments in digital marketing through various methods, including:</p>
+                <li>Following industry blogs, news websites, and social media channels related to digital marketing.</li>
+                <li>Participating in webinars, workshops, and conferences to learn from industry experts and thought leaders.</li>
+                <li>Joining professional networking groups and online communities to engage in discussions and share knowledge with peers.</li>
+                <li>Taking online courses and certifications to deepen my understanding of specific digital marketing topics.</li>
+                <li>Experimenting with new tools, technologies, and strategies in my own projects and campaigns to gain practical experience and insights.</li>
+            </ul>
+        </ol>
+    </div>
+</div>
+<h2 style="text-align: center;">
+    All the best for your future 🥳
+</h2>
+<script>
+    const correctAnswers = {
+        q1: 'A',
+        q2: 'A',
+        q3: 'A',
+        q4: 'A',
+        q5: 'A',
+        q6: 'A',
+        q7: 'A',
+        q8: 'A',
+        q9: 'A',
+        q10: 'A',
+        q11: 'A',
+        q12: 'A',
+        q13: 'A',
+        q14: 'A',
+        q15: 'A',
+        q16: 'A',
+        q17: 'A',
+        q18: 'A',
+        q19: 'A',
+        q20: 'A'
+    };
+
+    document.getElementById('start-btn').addEventListener('click', function() {
+        document.getElementById('quiz-content').style.display = 'block';
+        startTimer();
+    });
+
+    function startTimer() {
+        let timer = document.getElementById('timer');
+        let totalSeconds = 0;
+        setInterval(function() {
+            ++totalSeconds;
+            let minutes = Math.floor(totalSeconds / 60);
+            let seconds = totalSeconds % 60;
+            timer.innerText = pad(minutes) + ':' + pad(seconds);
+        }, 1000);
+    }
+
+    function pad(val) {
+        let valString = val + '';
+        if (valString.length < 2) {
+            return '0' + valString;
+        } else {
+            return valString;
+        }
+    }
+
+        document.getElementById('submit-btn').addEventListener('click', function() {
+        document.getElementById('quiz-content').style.display = 'block';
+        document.getElementById('results-container').style.display = 'block';
+
+    
+        let totalQuestions = 20;
+        let userAnswers = {};
+        let correctAnswersCount = 0;
+
+        for (let i = 1; i <= totalQuestions; i++) {
+            let questionId = 'q' + i;
+            let selectedOption = document.querySelector('input[name="' + questionId + '"]:checked');
+            if (selectedOption) {
+                userAnswers[questionId] = selectedOption.value;
+            }
+        }
+
+        for (let questionId in userAnswers) {
+            if (userAnswers.hasOwnProperty(questionId)) {
+                if (userAnswers[questionId] === correctAnswers[questionId]) {
+                    correctAnswersCount++;
+                }
+            }
+        }
+
+        document.getElementById('correct-answers').innerText = 'Correct Answers: ' + correctAnswersCount;
+        document.getElementById('total-questions').innerText = 'Total Questions: ' + totalQuestions;
+
+        if(correctAnswersCount<=18){
+            document.getElementById('brilent').style.display ='block'
+        }
+
+        let timer = document.getElementById('timer').innerText;
+        document.getElementById('time-taken').innerText = 'Time Taken: ' + timer;
+    });
+    function toggleAnswers() {
+        var answers = document.getElementById("show-answers");
+        var button = document.getElementById("click-show");
+        if (answers.style.display === "none") {
+            answers.style.display = "block";
+            button.innerText = "Hide answers";
+        } else {
+            answers.style.display = "none";
+            button.innerText = "Show answers";
+        }
+    }
+    
+
+    document.getElementById('submit-btn').addEventListener('click', function() {
+            submitAnswers();
+        });
+
+    function submitAnswers() {
+    const correctAnswers = {
+        q1: 'A',
+        q2: 'A',
+        q3: 'A',
+        q4: 'A',
+        q5: 'A',
+        q6: 'A',
+        q7: 'A',
+        q8: 'A',
+        q9: 'A',
+        q10: 'A',
+        q11: 'A',
+        q12: 'A',
+        q13: 'A',
+        q14: 'A',
+        q15: 'A',
+        q16: 'A',
+        q17: 'A',
+        q18: 'A',
+        q19: 'A',
+        q20: 'A'
+    };
+    const userAnswers = {};
+    const questions = document.querySelectorAll('input[type="radio"]');
+    questions.forEach((question) => {
+        if (question.checked) {
+            userAnswers[question.name] = question.value;
+        }
+    });
+
+    const incorrectAnswers = [];
+    for (const [question, userAnswer] of Object.entries(userAnswers)) {
+        if (userAnswer !== correctAnswers[question]) {
+            incorrectAnswers.push(question);
+        }
+    }
+
+    const resultsDiv = document.getElementById('results');
+    if (incorrectAnswers.length === 0) {
+        resultsDiv.innerHTML = '<p>Congratulations! All answers are correct.</p>';
+    } else {
+        resultsDiv.innerHTML = '<p>There are few incorrect questions.</p>';
+        incorrectAnswers.forEach((question) => {
+            const questionNumber = document.getElementById(question).getAttribute('data-question-number');
+            resultsDiv.innerHTML += `<p>Question ${questionNumber}</p>`;
+        });
+    }
+}
+
+function resetQuiz() {
+    const questions = document.querySelectorAll('input[type="radio"]');
+    questions.forEach((question) => {
+        question.checked = false;
+    });
+}
+
+document.getElementById('start-btn').addEventListener('click', function() {
+    resetQuiz();
+    document.getElementById('quiz-content').style.display = 'block';
+    startTimer();
+});
+
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-dl2vgS6LoCBqIJNZzm2M2dcKFc5RZLtf3ZhxxvH4ZCkD51HPXcgRc9wnTj46K65r" crossorigin="anonymous"></script>
+</body>
+</html>

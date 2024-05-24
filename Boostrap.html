@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplelearn // Web Development // Bootstrap</title>
+    <link rel="icon" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        iframe {
+            width: 800px;
+            height: 400px;
+            border: 2px solid rgb(93, 91, 91);
+        }
+        @media (max-width: 789px) {
+            iframe {
+                height: 200px;
+                width: 250px;
+            }
+        }
+        h1 {
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .html, #quiz-container, #results-container, .interview-questions{
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="main.html" title="Simple Learn Home">
+                <img src="logo.png" alt="Logo" title="Simple Learn Home" width="30" height="24" class="d-inline-block align-text-top">
+                Welcome
+            </a>
+        </div>
+    </nav>
+    <div class="html">
+        <h1>Bootstrap Tutorial</h1>
+        <h2>What Is Bootstrap?</h2>
+        <p>
+            Twitter Bootstrap is the most popular front end framework in the recent time. It is sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development. It uses HTML, CSS and Javascript. This tutorial will teach you the basics of Bootstrap 5 Framework using which you can create web projects with ease. The tutorial is divided into sections such as Bootstrap Basic Structure, Bootstrap Layout, Bootstrap Content, Bootstrap Components, Bootstrap Forms, Bootstrap Grids, Bootstrap Helpers, Bootstrap Utilities and Bootstrap Examples. Each of these sections contain related topics with simple and useful examples.
+        </p>
+        <h2>Why Learn Bootstrap?</h2>
+        <ul>
+            <li><b>Responsive design:</b> Bootstrap is built with a mobile-first approach, meaning it is designed to be responsive and adapt to different screen sizes. This ensures that your mobile application looks good and functions well on various devices, including smartphones and tablets.</li>
+            <li><b>Time-saving:</b> Bootstrap provides a wide range of predefined and customizable CSS and JavaScript components, such as grids, buttons, navigation bars, and modals. These ready-to-use components help developers save time and effort by eliminating the need to code everything from scratch.</li>
+            <li><b>Consistent appearance:</b> With Bootstrap, you can achieve a consistent and professional-looking design across your mobile application. It offers a set of predefined styles and themes that can be easily customized to match your brand's identity.</li>
+            <li><b>Cross-browser compatibility:</b> Bootstrap is designed to work well across different web browsers, ensuring that your mobile application functions consistently for users, regardless of the browser they prefer to use.</li>
+            <li><b>Community and support:</b> Bootstrap has a large and active community of developers who contribute to its improvement and provide support through forums and online resources. This can be helpful if you encounter any challenges or have questions during the development of your mobile application.</li>
+            <li><b>Accessibility:</b> Bootstrap follows modern web development standards and best practices, including accessibility guidelines. This ensures that your mobile application is accessible to users with disabilities, enhancing its usability and reach.</li>
+            <li><b>Continuous updates and enhancements:</b> Bootstrap is regularly updated and improved with new features, bug fixes, and performance enhancements. By using Bootstrap, you can take advantage of these updates to keep your mobile application up-to-date and optimized.</li>
+        </ul><div class="ratio ratio-16x9">
+        <img src="https://blog.templatetoaster.com/wp-content/uploads/2019/09/What-is-Bootstrap-Facebook.png" alt="Bootstrap">
+        </div><br>
+        <h2>Bootstrap Video Tutorial</h2>
+        <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/A7WvViiZQV8?start=60" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="download-notes">
+            <a href="Boostarp.pdf" download="Boostrap.pdf"></a>
+        </div>
+    </div>
+    <div id="quiz-container">
+        <h2>Bootstrap Quiz</h2>
+        <button id="start-btn" class="btn btn-success">Start Quiz</button>
+        <div id="quiz-content" style="display: none;"><br>
+            <span>Timer : </span><span id="timer">00:00</span><br>
+            <div id="question1">
+                <p>1. Which class provides a responsive fixed width container?</p>
+                <input type="radio" name="q1" value="A"> A. .container-fixed<br>
+                <input type="radio" name="q1" value="B"> B. .container-fluid<br>
+                <input type="radio" name="q1" value="C"> C. .container<br>
+            </div><br>
+            <div id="question2">
+                <p>2. Which class provides a full width container, spanning the entire width of the viewport?</p>
+                <input type="radio" name="q2" value="A"> A. .container<br>
+                <input type="radio" name="q2" value="B"> B. .container-fluid<br>
+                <input type="radio" name="q2" value="C"> C. container-fixed<br>
+            </div><br>
+            <div id="question3">
+                <p>3. The Bootstrap grid system is based on how many columns?</p>
+                <input type="radio" name="q3" value="A"> A. 12<br>
+                <input type="radio" name="q3" value="B"> B. 9<br>
+                <input type="radio" name="q3" value="C"> C. 6<br>
+                <input type="radio" name="q3" value="D"> D. 3<br>
+            </div><br>
+            <div id="question4">
+                <p>4. Which class adds zebra-stripes to a table?</p>
+                <input type="radio" name="q4" value="A"> A. .table-zebra<br>
+                <input type="radio" name="q4" value="B"> B. .even and .odd<br>
+                <input type="radio" name="q4" value="C"> C. .table-bordered<br>
+                <input type="radio" name="q4" value="D"> D. .table-striped <br>
+            </div><br>
+            <div id="question5">
+                <p>5. Which class shapes an image to a circle?</p>
+                <input type="radio" name="q5" value="A"> A. .img-rounded<br>
+                <input type="radio" name="q5" value="B"> B. .img-thumbnail<br>
+                <input type="radio" name="q5" value="C"> C. .img-circle<br>
+                <input type="radio" name="q5" value="D"> D. .img-round <br>
+            </div><br>
+            <div id="question6">
+                <p>6. Which class is used to create a big box for calling extra attention?</p>
+                <input type="radio" name="q6" value="A"> A. .container<br>
+                <input type="radio" name="q6" value="B"> B. .bigbox<br>
+                <input type="radio" name="q6" value="C"> C. .jumbotron<br>
+            </div><br>
+            <div id="question7">
+                <p>7. Which button class is used to create a large button?</p>
+                <input type="radio" name="q7" value="A"> A. .btn-lg<br>
+                <input type="radio" name="q7" value="B"> B. .btn-xl<br>
+                <input type="radio" name="q7" value="C"> C. .btn-l<br>
+                <input type="radio" name="q7" value="D"> D. .btn-large<br>
+            </div><br>
+            <div id="question8">
+                <p>8. Which class is used to create a button group?</p>
+                <input type="radio" name="q8" value="A"> A. .group-button<br>
+                <input type="radio" name="q8" value="B"> B. .group-btn<br>
+                <input type="radio" name="q8" value="C"> C. .button-group<br>
+                <input type="radio" name="q8" value="D"> D. .btn-group<br>
+            </div><br>
+            <div id="question9">
+                <p>9. How can you insert a search icon?</p>
+                <input type="radio" name="q9" value="A"> A. &lt;span class="glyphicon-search"> &lt;/span><br>
+                <input type="radio" name="q9" value="B"> B. &lt;span class="glyphicon glyphicon-search"> &lt;/span><br>
+                <input type="radio" name="q9" value="C"> C. &lt;span class="glyph glyph-search"> &lt;/span><br>
+                <input type="radio" name="q9" value="D"> D. &lt;span class="glyphicon search"> &lt;/span><br>
+            </div><br>
+            <div id="question10">
+                <p>10. Which class is used to create a badge?</p>
+                <input type="radio" name="q10" value="A"> A. .badge<br>
+                <input type="radio" name="q10" value="B"> B. .tag<br>
+                <input type="radio" name="q10" value="C"> C. .label<br>
+                <input type="radio" name="q10" value="D"> D. .flag <br>
+            </div><br>
+            <div class="d-flex justify-content-center align-items-center">
+                <button id="submit-btn" class="btn btn-info">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div id="results-container">
+        <h2>Results</h2>
+        <p id="correct-answers">Correct Answers: 0</p>
+        <p id="total-questions">Total Questions: 0</p>
+        <p id="time-taken">Time Taken: 00:00</p>
+    </div>
+    <div class="interview-questions">
+        <h2>Additional Bootstrap Interview Questions</h2>
+        <ol>
+            <li>What is Bootstrap?</li>
+            <li>What are the key features of Bootstrap?</li>
+            <li>Explain the grid system in Bootstrap.</li>
+            <li>What are the advantages of using Bootstrap?</li>
+            <li>How can you customize Bootstrap components?</li>
+            <li>Explain the difference between Bootstrap 3 and Bootstrap 4.</li>
+            <li>What are Bootstrap utilities?</li>
+            <li>How can you integrate Bootstrap into your project?</li>
+            <li>What is the purpose of Bootstrap themes?</li>
+            <li>How do you handle responsive design in Bootstrap?</li>
+            <li>Explain the difference between Bootstrap's container and container-fluid classes.</li>
+            <li>What are Bootstrap badges?</li>
+            <li>How do you create a navigation bar in Bootstrap?</li>
+            <li>Explain the use of Bootstrap modals.</li>
+            <li>What is the Bootstrap grid system based on?</li>
+        </ol>
+    </div>
+    <script>
+        // Quiz functionality
+        const startBtn = document.getElementById('start-btn');
+        const quizContent = document.getElementById('quiz-content');
+        const submitBtn = document.getElementById('submit-btn');
+        const resultsContainer = document.getElementById('results-container');
+
+        let correctAnswers = 0;
+        let totalQuestions = 10;
+        let startTime;
+
+        startBtn.addEventListener('click', () => {
+            startBtn.style.display = 'none';
+            quizContent.style.display = 'block';
+            startTime = new Date();
+        });
+
+        submitBtn.addEventListener('click', () => {
+            const endTime = new Date();
+            const timeDiff = endTime - startTime;
+            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+            const formattedTime = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+            const selectedAnswers = document.querySelectorAll('input:checked');
+
+            selectedAnswers.forEach((answer) => {
+                const questionNumber = answer.name.slice(1);
+                const correctAnswer = answer.value === 'D'; // Assuming correct answer is always 'D'
+                if (correctAnswer) {
+                    correctAnswers++;
+                }
+                document.getElementById(`question${questionNumber}`).style.display = 'none';
+            });
+
+            resultsContainer.style.display = 'block';
+            document.getElementById('correct-answers').textContent = `Correct Answers: ${correctAnswers}`;
+            document.getElementById('total-questions').textContent = `Total Questions: ${totalQuestions}`;
+            document.getElementById('time-taken').textContent = `Time Taken: ${formattedTime}`;
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-dl2vgS6LoCBqIJNZzm2M2dcKFc5RZLtf3ZhxxvH4ZCkD51HPXcgRc9wnTj46K65r" crossorigin="anonymous"></script>
+</body>
+</html>

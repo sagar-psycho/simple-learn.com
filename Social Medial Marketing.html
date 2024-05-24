@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Social Media Marketing</title>
+    <link rel="icon" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        iframe {
+            width: 800px;
+            height: 400px;
+            border: 2px solid rgb(93, 91, 91);
+        }
+        @media (max-width: 789px) {
+            iframe {
+                height: 200px;
+                width: 250px;
+            }
+        }
+        h1 {
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .html, #quiz-container, #results-container, .interview-questions{
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="main.html" title="Simple Learn Home">
+                <img src="logo.png" alt="Logo" title="Simple Learn Home" width="30" height="24" class="d-inline-block align-text-top">
+                Welcome
+            </a>
+        </div>
+    </nav>
+    <div class="html">
+        <h1>Social Media Marketing Tutorial</h1>
+        <h2>What Is Social Media Marketing?</h2>
+        <p><b>Social Media Marketing (SMM)</b> is the practice of using social media platforms to promote products, services, or brands, engage with customers, and drive traffic to a business's website. This marketing strategy leverages the power of social networks to reach a large audience, create brand awareness, and foster community engagement.</p>
+        <b>Social Media Advertising:</b>
+        <ul>
+            <li><b>Paid Ads:</b> Creating and running targeted ads on platforms like Facebook, Instagram, Twitter, LinkedIn, and others.</li>
+            <li><b>Sponsored Content:</b> Paying to have content promoted to a wider audience.</li>
+        </ul>
+        <b>Analytics and Reporting:</b>
+        <ul>
+            <li><b>Metrics:</b> Tracking key performance indicators (KPIs) such as likes, shares, comments, reach, impressions, click-through rates, and conversions.</li>
+            <li><b>Analysis:</b> Using tools like Google Analytics, Facebook Insights, and others to analyze the effectiveness of social media campaigns.</li>
+        </ul>
+        <h2>Why learn Social Media Marketing?</h2>
+        <p>Learning SEM can be beneficial for several reasons:</p>
+        <ol>
+            <li><b>Immediate Results:</b> SEM allows you to quickly increase the visibility of your website in search engine results pages (SERPs) through paid advertising. Unlike organic search engine optimization (SEO), which can take time to see results, SEM can generate immediate traffic and leads for your business.</li>
+            <li><b>Targeted Advertising:</b> SEM offers precise targeting options based on keywords, demographics, location, device, and other factors. This allows    you to reach potential customers who are actively searching for products or services related to your business, increasing the likelihood of conversion.</li>
+            <li><b>Cost-Effective Marketing:</b> Compared to traditional marketing methods, digital marketing often offers a higher return on investment (ROI) and can be more cost-effective, especially for small businesses and startups with limited budgets.</li>
+            <li><b>Targeted Reach:</b> Digital marketing allows you to target specific demographics, interests, and behaviors, enabling you to reach your ideal audience more effectively than traditional marketing methods.</li>
+        </ol>
+        <div class="ratio ratio-16x9">
+            <img src="https://www.sparkinfosys.com/images/service-banners/social-media-marketing.jpg" alt="SEM">
+        </div><br><br>
+        <h2>Social Media Marketing Tutorial</h2><br>
+        <div class="ratio ratio-16x9">>
+            <iframe src="https://youtu.be/pYtVnDQWTe4?si=FxmC6pN3lm_RSuzZ&t=60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </div>
+    <div id="quiz-container">
+        <h2>SEM Quiz</h2>
+        <button id="start-btn" class="btn btn-success">Start Quiz</button>
+        <div id="quiz-content" style="display: none;">
+            <span>Timer: </span><span id="timer">00:00</span><br><br>
+            <div id="question1" data-question-number="1">
+                <p>1. What is SEM?</p>
+                <input type="radio" name="q1" value="A"> A. Search Engine Marketing<br>
+                <input type="radio" name="q1" value="B"> B. Social Engagement Marketing<br>
+                <input type="radio" name="q1" value="C"> C. Sales Enhancement Marketing<br>
+            </div><br>
+            
+            <div id="question2" data-question-number="2">
+                <p>2. What does PPC stand for in SEM?</p>
+                <input type="radio" name="q2" value="A"> A. Pay Per Click<br>
+                <input type="radio" name="q2" value="B"> B. Pay Per Conversion<br>
+                <input type="radio" name="q2" value="C"> C. Pay Per Campaign<br>
+            </div><br>
+            
+            <div id="question3" data-question-number="3">
+                <p>3. What is the main objective of SEM?</p>
+                <input type="radio" name="q3" value="A"> A. To increase website traffic through paid advertising<br>
+                <input type="radio" name="q3" value="B"> B. To improve organic search rankings<br>
+                <input type="radio" name="q3" value="C"> C. To manage social media campaigns<br>
+            </div><br>
+            
+            <div id="question4" data-question-number="4">
+                <p>4. What is a keyword in SEM?</p>
+                <input type="radio" name="q4" value="A"> A. A term used to trigger ads in search engines<br>
+                <input type="radio" name="q4" value="B"> B. A secret code for website access<br>
+                <input type="radio" name="q4" value="C"> C. A term used to categorize blog posts<br>
+            </div><br>
+            
+            <div id="question5" data-question-number="5">
+                <p>5. What is AdWords?</p>
+                <input type="radio" name="q5" value="A"> A. Google’s advertising platform for SEM<br>
+                <input type="radio" name="q5" value="B"> B. A tool for analyzing website performance<br>
+                <input type="radio" name="q5" value="C"> C. A social media management tool<br>
+            </div><br>
+            
+            <div id="question6" data-question-number="6">
+                <p>6. What is Quality Score in Google Ads?</p>
+                <input type="radio" name="q6" value="A"> A. A measure of the relevance and quality of your ads and keywords<br>
+                <input type="radio" name="q6" value="B"> B. A rating of your website’s design<br>
+                <input type="radio" name="q6" value="C"> C. A metric for social media engagement<br>
+            </div><br>
+            
+            <div id="question7" data-question-number="7">
+                <p>7. What is a landing page in SEM?</p>
+                <input type="radio" name="q7" value="A"> A. The page where visitors land after clicking on your ad<br>
+                <input type="radio" name="q7" value="B"> B. The home page of a website<br>
+                <input type="radio" name="q7" value="C"> C. A page with contact information<br>
+            </div><br>
+            
+            <div id="question8" data-question-number="8">
+                <p>8. What is a bid in SEM?</p>
+                <input type="radio" name="q8" value="A"> A. The amount of money you're willing to pay for a click on your ad<br>
+                <input type="radio" name="q8" value="B"> B. A request for proposal<br>
+                <input type="radio" name="q8" value="C"> C. The cost of creating an ad<br>
+            </div><br>
+            
+            <div id="question9" data-question-number="9">
+                <p>9. What is a campaign in SEM?</p>
+                <input type="radio" name="q9" value="A"> A. A set of ad groups that share a budget, location targeting, and other settings<br>
+                <input type="radio" name="q9" value="B"> B. A single advertisement<br>
+                <input type="radio" name="q9" value="C"> C. A blog post series<br>
+            </div><br>
+            
+            <div id="question10" data-question-number="10">
+                <p>10. What is CPC in SEM?</p>
+                <input type="radio" name="q10" value="A"> A. Cost Per Click<br>
+                <input type="radio" name="q10" value="B"> B. Clicks Per Conversion<br>
+                <input type="radio" name="q10" value="C"> C. Cost Per Campaign<br>
+            </div><br>
+            
+            <div id="question11" data-question-number="11">
+                <p>11. What is an impression in SEM?</p>
+                <input type="radio" name="q11" value="A"> A. The number of times your ad is shown<br>
+                <input type="radio" name="q11" value="B"> The number of clicks on your ad<br>
+                <input type="radio" name="q11" value="C"> C. The number of conversions your ad generates<br>
+            </div><br>
+            
+            <div id="question12" data-question-number="12">
+                <p>12. What does CTR stand for in SEM?</p>
+                <input type="radio" name="q12" value="A"> A. Click-Through Rate<br>
+                <input type="radio" name="q12" value="B"> B. Cost To Reach<br>
+                <input type="radio" name="q12" value="C"> C. Clicks To Revenue<br>
+            </div><br>
+            
+            <div id="question13" data-question-number="13">
+                <p>13. What is the purpose of remarketing in SEM?</p>
+                <input type="radio" name="q13" value="A"> A. To target users who have previously visited your website<br>
+                <input type="radio" name="q13" value="B"> B. To reach new audiences<br>
+                <input type="radio" name="q13" value="C"> C. To manage social media accounts<br>
+            </div><br>
+            
+            <div id="question14" data-question-number="14">
+                <p>14. What is the difference between SEO and SEM?</p>
+                <input type="radio" name="q14" value="A"> A. SEO focuses on organic search results, while SEM includes paid advertising<br>
+                <input type="radio" name="q14" value="B"> B. SEO is for social media, SEM is for search engines<br>
+                <input type="radio" name="q14" value="C"> C. There is no difference<br>
+            </div><br>
+            
+            <div id="question15" data-question-number="15">
+                <p>15. What is a conversion in SEM?</p>
+                <input type="radio" name="q15" value="A"> A. A desired action taken by a visitor, such as a purchase or sign-up<br>
+                <input type="radio" name="q15" value="B"> B. A visit to your website<br>
+                <input type="radio" name="q15" value="C"> C. A click on your ad<br>
+            </div><br>
+            
+            <div id="question16" data-question-number="16">
+                <p>16. What is an ad group in SEM?</p>
+                <input type="radio" name="q16" value="A"> A. A collection of related ads and keywords within a campaign<br>
+                <input type="radio" name="q16" value="B"> B. A group of websites displaying your ads<br>
+                <input type="radio" name="q16" value="C"> C. A type of social media campaign<br>
+            </div><br>
+            
+            <div id="question17" data-question-number="17">
+                <p>17. What is the purpose of using negative keywords in SEM?</p>
+                <input type="radio" name="q17" value="A"> A. To prevent ads from showing for certain search terms<br>
+                <input type="radio" name="q17" value="B"> B. To highlight certain keywords<br>
+                <input type="radio" name="q17" value="C"> C. To lower the bid price<br>
+            </div><br>
+            
+            <div id="question18" data-question-number="18">
+                <p>18. What is A/B testing in SEM?</p>
+                <input type="radio" name="q18" value="A"> A. Testing two versions of an ad to see which performs better<br>
+                <input type="radio" name="q18" value="B"> B. Tracking website traffic<br>
+                <input type="radio" name="q18" value="C"> C. Analyzing social media engagement<br>
+            </div><br>
+            
+            <div id="question19" data-question-number="19">
+                <p>19. What is a call-to-action (CTA) in an SEM ad?</p>
+                <input type="radio" name="q19" value="A"> A. A prompt encouraging users to take a specific action<br>
+                <input type="radio" name="q19" value="B"> B. A headline for your ad<br>
+                <input type="radio" name="q19" value="C"> C. A type of keyword<br>
+            </div><br>
+            
+            <div id="question20" data-question-number="20">
+                <p>20. What is the role of analytics in SEM?</p>
+                <input type="radio" name="q20" value="A"> A. To measure and analyze the performance of your ads<br>
+                <input type="radio" name="q20" value="B"> B. To create ad copy<br>
+                <input type="radio" name="q20" value="C"> C. To manage email campaigns<br>
+            </div><br>
+            
+            <div class="d-flex justify-content-center align-items-center">
+                <button id="submit-btn" class="btn btn-info">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div id="results-container" style="display: none;">
+        <h2>Results</h2>
+        <p id="correct-answers">Correct Answers: 0</p>
+        <p id="total-questions">Total Questions: 0</p>
+        <p id="time-taken">Time Taken: 00:00</p>
+        <div id="results"></div>
+        <p id="brilent" style="display: none;">Your are wonderful......</p>
+    </div>
+    <div class="interview-questions">
+        <h2>Additional SEM Interview Questions</h2>
+        <ol>
+            <li>What is SEM and how does it differ from SEO?</li>
+            <li>Explain the concept of Quality Score and its impact on SEM campaigns.</li>
+            <li>What are the key components of an SEM campaign?</li>
+            <li>How do you conduct keyword research for an SEM campaign?</li>
+            <li>What is the importance of negative keywords in an SEM campaign?</li>
+            <li>Explain the difference between CPC, CPM, and CPA.</li>
+            <li>How would you optimize an underperforming SEM campaign?</li>
+            <li>What is remarketing and how does it work in SEM?</li>
+            <li>Describe the importance of A/B testing in SEM.</li>
+            <li>What are ad extensions and why are they important?</li>
+        </ol>
+        <button id="click-show" class="btn btn-danger" onclick="toggleAnswers()">
+            Show answers
+        </button> <br>
+    <div id="show-answers" style="display: none;"><br><br>
+        <h2>Interview questions with answers</h2>
+        <ol>
+            <li><b>What is SEM and how does it differ from SEO?</b></li>
+            <ul>
+                <li>SEM involves paid advertising to increase visibility in search engine results, while SEO focuses on optimizing a website to improve organic search rankings.</li>
+            </ul>
+            <li><b>Explain the concept of Quality Score and its impact on SEM campaigns.</b></li>
+            <ul>
+                <li> Quality Score is a metric used by search engines to determine the relevance and quality of your ads, keywords, and landing pages. It impacts your ad's position and cost-per-click.</li>
+            </ul>
+            <li><b>What are the key components of an SEM campaign?</b></li>
+            <ul>
+                <li>Keywords, ad copy, landing pages, bid strategy, ad extensions, and performance metrics.</li>
+            </ul>
+            <li><b>How do you conduct keyword research for an SEM campaign?</b></li>
+            <ul>
+                <li>Using tools like Google Keyword Planner, SEMrush, or Ahrefs to identify relevant and high-traffic keywords that match user intent.</li>
+            </ul>
+            <li><b>What is the importance of negative keywords in an SEM campaign?</b></li>
+            <ul>
+                <li>Negative keywords prevent ads from being shown for irrelevant searches, thus saving budget and improving ad relevance.</li>
+            </ul>
+            <li><b>Explain the difference between CPC, CPM, and CPA.</b></li>
+            <ul>
+                <li>CPC (Cost Per Click) is the amount paid for each click on an ad. CPM (Cost Per Thousand Impressions) is the cost for one thousand views of an ad. CPA (Cost Per Acquisition) is the cost of acquiring a customer through an ad.</li>
+            </ul>
+            <li><b>How would you optimize an underperforming SEM campaign?</b></li>
+            <ul>
+                <li>Analyzing keyword performance, adjusting bids, improving ad copy, refining targeting options, using ad extensions, and optimizing landing pages.</li>
+            </ul>
+            <li><b>What is remarketing and how does it work in SEM?</b></li>
+            <ul>
+                <li>Remarketing targets users who have previously visited your website with ads to encourage them to return and complete a desired action.</li>
+            </ul>
+            <li><b>Describe the importance of A/B testing in SEM.</b></li>
+            <ul>
+                <li>A/B testing involves comparing two versions of an ad to determine which one performs better, helping to optimize ad performance and ROI.</li>
+            </ul>
+            <li><b>What are ad extensions and why are they important?</b></li>
+            <ul>
+                <li>Ad extensions provide additional information (such as phone numbers, site links, or callouts) and increase the visibility and click-through rate of ads.</li>
+            </ul>
+        </ol>
+    </div>
+</div>
+<h2 style="text-align: center;">
+    All the best for your future 🥳
+</h2>
+<script>
+    const correctAnswers = {
+        q1: 'A',
+        q2: 'A',
+        q3: 'A',
+        q4: 'A',
+        q5: 'A',
+        q6: 'A',
+        q7: 'A',
+        q8: 'A',
+        q9: 'A',
+        q10: 'A',
+        q11: 'A',
+        q12: 'A',
+        q13: 'A',
+        q14: 'A',
+        q15: 'A',
+        q16: 'A',
+        q17: 'A',
+        q18: 'A',
+        q19: 'A',
+        q20: 'A'
+    };
+
+    document.getElementById('start-btn').addEventListener('click', function() {
+        document.getElementById('quiz-content').style.display = 'block';
+        startTimer();
+    });
+
+    function startTimer() {
+        let timer = document.getElementById('timer');
+        let totalSeconds = 0;
+        setInterval(function() {
+            ++totalSeconds;
+            let minutes = Math.floor(totalSeconds / 60);
+            let seconds = totalSeconds % 60;
+            timer.innerText = pad(minutes) + ':' + pad(seconds);
+        }, 1000);
+    }
+
+    function pad(val) {
+        let valString = val + '';
+        if (valString.length < 2) {
+            return '0' + valString;
+        } else {
+            return valString;
+        }
+    }
+
+        document.getElementById('submit-btn').addEventListener('click', function() {
+        document.getElementById('quiz-content').style.display = 'block';
+        document.getElementById('results-container').style.display = 'block';
+
+    
+        let totalQuestions = 20;
+        let userAnswers = {};
+        let correctAnswersCount = 0;
+
+        for (let i = 1; i <= totalQuestions; i++) {
+            let questionId = 'q' + i;
+            let selectedOption = document.querySelector('input[name="' + questionId + '"]:checked');
+            if (selectedOption) {
+                userAnswers[questionId] = selectedOption.value;
+            }
+        }
+
+        for (let questionId in userAnswers) {
+            if (userAnswers.hasOwnProperty(questionId)) {
+                if (userAnswers[questionId] === correctAnswers[questionId]) {
+                    correctAnswersCount++;
+                }
+            }
+        }
+
+        document.getElementById('correct-answers').innerText = 'Correct Answers: ' + correctAnswersCount;
+        document.getElementById('total-questions').innerText = 'Total Questions: ' + totalQuestions;
+
+        if(correctAnswersCount<=18){
+            document.getElementById('brilent').style.display ='block'
+        }
+
+        let timer = document.getElementById('timer').innerText;
+        document.getElementById('time-taken').innerText = 'Time Taken: ' + timer;
+    });
+    function toggleAnswers() {
+        var answers = document.getElementById("show-answers");
+        var button = document.getElementById("click-show");
+        if (answers.style.display === "none") {
+            answers.style.display = "block";
+            button.innerText = "Hide answers";
+        } else {
+            answers.style.display = "none";
+            button.innerText = "Show answers";
+        }
+    }
+    
+
+    document.getElementById('submit-btn').addEventListener('click', function() {
+            submitAnswers();
+        });
+
+    function submitAnswers() {
+    const correctAnswers = {
+        q1: 'A',
+        q2: 'A',
+        q3: 'A',
+        q4: 'A',
+        q5: 'A',
+        q6: 'A',
+        q7: 'A',
+        q8: 'A',
+        q9: 'A',
+        q10: 'A',
+        q11: 'A',
+        q12: 'A',
+        q13: 'A',
+        q14: 'A',
+        q15: 'A',
+        q16: 'A',
+        q17: 'A',
+        q18: 'A',
+        q19: 'A',
+        q20: 'A'
+    };
+    const userAnswers = {};
+    const questions = document.querySelectorAll('input[type="radio"]');
+    questions.forEach((question) => {
+        if (question.checked) {
+            userAnswers[question.name] = question.value;
+        }
+    });
+
+    const incorrectAnswers = [];
+    for (const [question, userAnswer] of Object.entries(userAnswers)) {
+        if (userAnswer !== correctAnswers[question]) {
+            incorrectAnswers.push(question);
+        }
+    }
+
+    const resultsDiv = document.getElementById('results');
+    if (incorrectAnswers.length === 0) {
+        resultsDiv.innerHTML = '<p>Congratulations! All answers are correct.</p>';
+    } else {
+        resultsDiv.innerHTML = '<p>There are few incorrect questions.</p>';
+        incorrectAnswers.forEach((question) => {
+            const questionNumber = document.getElementById(question).getAttribute('data-question-number');
+            resultsDiv.innerHTML += `<p>Question ${questionNumber}</p>`;
+        });
+    }
+}
+
+function resetQuiz() {
+    const questions = document.querySelectorAll('input[type="radio"]');
+    questions.forEach((question) => {
+        question.checked = false;
+    });
+}
+
+document.getElementById('start-btn').addEventListener('click', function() {
+    resetQuiz();
+    document.getElementById('quiz-content').style.display = 'block';
+    startTimer();
+});
+
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-dl2vgS6LoCBqIJNZzm2M2dcKFc5RZLtf3ZhxxvH4ZCkD51HPXcgRc9wnTj46K65r" crossorigin="anonymous"></script>
+</body>
+</html>

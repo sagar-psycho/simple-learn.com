@@ -1,0 +1,53 @@
+.maths {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    justify-content: space-between;
+    margin-right: 10px;
+    
+}
+@media (max-width: 768px) {
+    .maths {
+        display: block;
+    }
+    .card {
+        margin-bottom: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+.tables{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.tables h1{
+    margin-left: 10px;
+}
+#result5{
+    padding: 10px;
+}
+.time-date{
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vh;
+    float: right;
+    position: static;
+}
+.time-container{
+    display: flex;
+}
+.time {
+    margin: 0 10px;
+}
+#hours, #minutes, #seconds{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 2px green;
+    border: 2px solid black;
+}
+
+#date{
+    margin-top: 2vh;
+    text-align: center;
+}

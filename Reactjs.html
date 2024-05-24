@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplelearn // Web Development // React js</title>
+    <link rel="icon" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        iframe {
+            width: 800px;
+            height: 400px;
+            border: 2px solid rgb(93, 91, 91);
+        }
+        @media (max-width: 789px) {
+            iframe {
+                height: 200px;
+                width: 250px;
+            }
+        }
+        h1 {
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .html, #quiz-container, #results-container, .interview-questions{
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="main.html" title="Simple Learn Home">
+                <img src="logo.png" alt="Logo" title="Simple Learn Home" width="30" height="24" class="d-inline-block align-text-top">
+                Welcome
+            </a>
+        </div>
+    </nav>
+    <div class="html">
+        <h1>ReactJS Tutorial</h1>
+        <h2>What Is ReactJS?</h2>
+        <p>
+            ReactJS is a JavaScript library developed by Facebook for building user interfaces, particularly for single-page applications (SPAs) and dynamic web applications. It's known for its declarative and component-based approach, which makes it easier to build reusable UI components.
+        </p>
+        <b>Here are some key points about ReactJS:</b>
+        <ol>
+            <li><b>Declarative:</b> React allows you to describe how your UI should look based on the current state, and it automatically manages updates when the state changes. This makes it easier to understand and maintain your code.</li>
+            <li><b>Component-Based:</b>  React applications are composed of small, isolated components that represent different parts of the UI. These components can be reused throughout the application, leading to a more modular and maintainable codebase.</li>
+            <li><b> Virtual DOM:</b> React uses a virtual DOM to efficiently update the UI. Instead of directly manipulating the browser's DOM, React builds a virtual representation of the DOM in memory and then updates the actual DOM only when necessary. This approach helps improve performance and minimize unnecessary re-renders.</li>
+            <li><b>JSX:</b> JSX is a syntax extension for JavaScript that allows you to write HTML-like code within your JavaScript files. JSX makes it easier to write and visualize UI components, as it combines HTML structure with JavaScript logic.</li>
+            <li><b>Unidirectional Data Flow:</b> React follows a unidirectional data flow, where data flows down from parent components to child components via props. This makes it easier to understand how data is passed and modified within the application, leading to fewer bugs and better predictability.</li>
+            <li><b>Accessibility:</b> Bootstrap follows modern web development standards and best practices, including accessibility guidelines. This ensures that your mobile application is accessible to users with disabilities, enhancing its usability and reach.</li>
+            <li><b>Rich Ecosystem:</b> React has a large and active ecosystem with libraries, tools, and community support. This ecosystem includes state management libraries like Redux, routing libraries like React Router, and UI component libraries like Material-UI.</li>
+        </ol>
+        <h2>Why learn ReactJS?</h2>
+        <p>Today, many JavaScript frameworks are available in the market(like angular, node), but still, React came into the market and gained popularity amongst them. The previous frameworks follow the traditional data flow structure, which uses the DOM (Document Object Model). DOM is an object which is created by the browser each time a web page is loaded. It dynamically adds or removes the data at the back end and when any modifications were done, then each time a new DOM is created for the same page. This repeated creation of DOM makes unnecessary memory wastage and reduces the performance of the application.</p>
+        <p>Therefore, a new technology ReactJS framework invented which remove this drawback. ReactJS allows you to divide your entire application into various components. ReactJS still used the same traditional data flow, but it is not directly operating on the browser's Document Object Model (DOM) immediately; instead, it operates on a virtual DOM. It means rather than manipulating the document in a browser after changes to our data, it resolves changes on a DOM built and run entirely in memory. After the virtual DOM has been updated, React determines what changes made to the actual browser's DOM. The React Virtual DOM exists entirely in memory and is a representation of the web browser's DOM. Due to this, when we write a React component, we did not write directly to the DOM; instead, we are writing virtual components that react will turn into the DOM.</p>
+        <div class="ratio ratio-16x9">
+        <img src="https://krify.co/wp-content/uploads/2019/06/ReactJS.jpg" alt="React JS">
+        </div>
+        <h2>ReactJS Video Tutorial</h2><br>
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/-JolQDZCMX8?start=60" title="YouTube video" allowfullscreen></iframe>
+        </div>
+        <!-- <iframe  src="https://www.youtube.com/embed/-JolQDZCMX8?start=60" frameborder="0" allowfullscreen></iframe> -->
+    </div>
+    <div id="quiz-container">
+        <h2>ReactJS Quiz</h2>
+        <button id="start-btn" class="btn btn-success">Start Quiz</button>
+        <div id="quiz-content" style="display: none;">
+            <span>Timer: </span><span id="timer">00:00</span><br><br>
+            <div id="question1">
+                <p>1. What does JSX stand for?</p>
+                <input type="radio" name="q1" value="A"> A. JavaScript XML<br>
+                <input type="radio" name="q1" value="B"> B. JavaScript XSL<br>
+                <input type="radio" name="q1" value="C"> C. JavaScript Extensible<br>
+            </div><br>
+            <div id="question2">
+                <p>2. Which method is used to change the state in React components?</p>
+                <input type="radio" name="q2" value="A"> A. setState()<br>
+                <input type="radio" name="q2" value="B"> B. changeState()<br>
+                <input type="radio" name="q2" value="C"> C. updateState()<br>
+            </div><br>
+            <div id="question3">
+                <p>3. What is the purpose of useEffect() hook in React?</p>
+                <input type="radio" name="q3" value="A"> A. To perform data fetching<br>
+                <input type="radio" name="q3" value="B"> B. To handle component updates<br>
+                <input type="radio" name="q3" value="C"> C. To manage component lifecycle<br>
+            </div><br>
+            <div id="question4">
+                <p>4. How can you pass data from a parent component to a child component in React?</p>
+                <input type="radio" name="q4" value="A"> A. Through props<br>
+                <input type="radio" name="q4" value="B"> B. Through state<br>
+                <input type="radio" name="q4" value="C"> C. Through context<br>
+            </div><br>
+            <div id="question5">
+                <p>5. What is the purpose of React.Fragment?</p>
+                <input type="radio" name="q5" value="A"> A. To create reusable components<br>
+                <input type="radio" name="q5" value="B"> B. To group multiple elements without adding extra nodes to the DOM<br>
+                <input type="radio" name="q5" value="C"> C. To handle events in React<br>
+            </div><br>
+            <div id="question6">
+                <p>6. How do you handle forms in React?</p>
+                <input type="radio" name="q6" value="A"> A. Using the onSubmit event<br>
+                <input type="radio" name="q6" value="B"> B. Using the onChange event<br>
+                <input type="radio" name="q6" value="C"> C. Using the useState hook<br>
+            </div><br>
+            <div id="question7">
+                <p>7. What is the purpose of the useRef hook in React?</p>
+                <input type="radio" name="q7" value="A"> A. To subscribe to lifecycle events<br>
+                <input type="radio" name="q7" value="B"> B. To manipulate the DOM directly<br>
+                <input type="radio" name="q7" value="C"> C. To manage form state<br>
+            </div><br>
+            <div id="question8">
+                <p>8. What is the key prop used for in React?</p>
+                <input type="radio" name="q8" value="A"> A. To specify a unique identifier for list items<br>
+                <input type="radio" name="q8" value="B"> B. To define component hierarchy<br>
+                <input type="radio" name="q8" value="C"> C. To control component visibility<br>
+            </div><br>
+            <div id="question9">
+                <p>9. How can you optimize performance in React?</p>
+                <input type="radio" name="q9" value="A"> A. By using PureComponent<br>
+                <input type="radio" name="q9" value="B"> B. By implementing shouldComponentUpdate<br>
+                <input type="radio" name="q9" value="C"> C. Both A and B<br>
+            </div><br>
+            <div id="question10">
+                <p>10. What is the purpose of the useContext hook in React?</p>
+                <input type="radio" name="q10" value="A"> A. To manage form state<br>
+                <input type="radio" name="q10" value="B"> B. To share state between components without prop drilling<br>
+                <input type="radio" name="q10" value="C"> C. To handle component lifecycle<br>
+            </div><br>
+            <div id="question11">
+                <p>11. How do you handle errors in React?</p>
+                <input type="radio" name="q11" value="A"> A. By using try...catch statements<br>
+                <input type="radio" name="q11" value="B"> B. By implementing componentDidCatch<br>
+                <input type="radio" name="q11" value="C"> C. By using the ErrorBoundary component<br>
+            </div><br>
+            <div id="question12">
+                <p>12. What is the purpose of the useCallback hook in React?</p>
+                <input type="radio" name="q12" value="A"> A. To memoize functions<br>
+                <input type="radio" name="q12" value="B"> B. To fetch data from an API<br>
+                <input type="radio" name="q12" value="C"> C. To manage form state<br>
+            </div><br>
+            <div id="question13">
+                <p>13. What is the purpose of the useMemo hook in React?</p>
+                <input type="radio" name="q13" value="A"> A. To memoize functions<br>
+                <input type="radio" name="q13" value="B"> B. To manage form state<br>
+                <input type="radio" name="q13" value="C"> C. To subscribe to lifecycle events<br>
+            </div><br>
+            <div id="question14">
+                <p>14. How can you conditionally render components in React?</p>
+                <input type="radio" name="q14" value="A"> A. Using the if-else statements<br>
+                <input type="radio" name="q14" value="B"> B. Using the ternary operator<br>
+                <input type="radio" name="q14" value="C"> C. Both A and B<br>
+            </div><br>
+            <div id="question15">
+                <p>15. What is the purpose of keys in React lists?</p>
+                <input type="radio" name="q15" value="A"> A. To uniquely identify list items<br>
+                <input type="radio" name="q15" value="B"> B. To control the order of list items<br>
+                <input type="radio" name="q15" value="C"> C. To style list items<br>
+            </div><br>
+            <div id="question16">
+                <p>16. What is the virtual DOM in React?</p>
+                <input type="radio" name="q16" value="A"> A. A JavaScript representation of the actual DOM<br>
+                <input type="radio" name="q16" value="B"> B. A virtual environment for testing<br>
+                <input type="radio" name="q16" value="C"> C. A debugging tool<br>
+            </div><br>
+            <div id="question17">
+                <p>17. How do you handle routing in React applications?</p>
+                <input type="radio" name="q17" value="A"> A. Using React Router<br>
+                <input type="radio" name="q17" value="B"> B. Using conditional rendering<br>
+                <input type="radio" name="q17" value="C"> C. Both A and B<br>
+            </div><br>
+            <div id="question18">
+                <p>18. What is JSX in React?</p>
+                <input type="radio" name="q18" value="A"> A. JavaScript Extension<br>
+                <input type="radio" name="q18" value="B"> B. JavaScript XML<br>
+                <input type="radio" name="q18" value="C"> C. JavaScript XML Syntax<br>
+            </div><br>
+            <div id="question19">
+                <p>19. What is the purpose of the useEffect hook in React?</p>
+                <input type="radio" name="q19" value="A"> A. To perform data fetching<br>
+                <input type="radio" name="q19" value="B"> B. To handle component updates<br>
+                <input type="radio" name="q19" value="C"> C. To manage component lifecycle<br>
+            </div><br>
+            <div id="question20">
+                <p>20. What is the difference between controlled and uncontrolled components in React?</p>
+                <input type="radio" name="q20" value="A"> A. Controlled components are initialized with default values, while uncontrolled components are not<br>
+                <input type="radio" name="q20" value="B"> B. Controlled components rely on internal state managed by React, while uncontrolled components rely on DOM for state<br>
+                <input type="radio" name="q20" value="C"> C. There is no difference<br>
+            </div><br>
+            <div class="d-flex justify-content-center align-items-center">
+                <button id="submit-btn" class="btn btn-info">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div id="results-container" style="display: none;">
+        <h2>Results</h2>
+        <p id="correct-answers">Correct Answers: 0</p>
+        <p id="total-questions">Total Questions: 0</p>
+        <p id="time-taken">Time Taken: 00:00</p>
+    </div>
+    <div class="interview-questions">
+        <h2>Additional ReactJs Interview Questions</h2>
+        <ol>
+            <li>What is React?</li>
+            <li>What are the key features of React?</li>
+            <li>What are the differences between functional components and class components in React?</li>
+            <li>What are props in React?</li>
+            <li>What is state in React?</li>
+            <li>What are React hooks?</li>
+            <li>What is the purpose of useEffect hook in React?</li>
+            <li>What is the difference between controlled and uncontrolled components in React?</li>
+            <li>What is React Router?</li>
+            <li>What are keys in React and why are they important?</li>
+            <li>What are React fragments?</li>
+            <li>What is the useContext hook used for in React?</li>
+            <li>Explain the concept of lifting state up in React.</li>
+            <li>What is the purpose of the useMemo hook in React?</li>
+            <li>What is React context?</li>
+        </ol>
+        <button id="click-show" class="btn btn-danger" onclick="toggleAnswers()">
+            Show answers
+        </button> <br>
+    <div id="show-answers" style="display: none;"><br><br>
+        <h2>Interview questions with answers</h2>
+        <ol>
+            <li><b>What is React?</b></li>
+            <ul>
+                <li>React is a JavaScript library for building user interfaces, developed by Facebook. It allows developers to create reusable UI components and manage their state efficiently.</li>
+            </ul>
+            <li><b>What are the key features of React?</b></li>
+            <ul>
+                <li>Virtual DOM: React uses a virtual DOM to improve performance by minimizing DOM manipulation.</li>
+                <li>JSX: React allows developers to write HTML-like syntax called JSX, which makes writing and understanding components easier.</li>
+                <li>Component-based architecture: React follows a component-based architecture, allowing developers to create reusable and modular UI components.</li>
+                <li>Unidirectional data flow: React follows a unidirectional data flow, which means data flows in a single direction from parent to child components.</li>
+            </ul>
+            <li><b>What are the differences between functional components and class components in React?</b></li>
+            <ul>
+                <li>Functional components are defined as JavaScript functions, while class components are defined as ES6 classes.</li>
+                <li>Functional components are simpler and more concise, whereas class components offer additional features such as state and lifecycle methods.</li>
+                <li>With the introduction of React hooks, functional components can now manage state and side effects, making them more powerful and preferred in many cases.</li>
+            </ul>
+            <li><b>What are props in React?</b></li>
+            <ul>
+                <li>Props (short for properties) are a way to pass data from parent to child components in React. They are read-only and immutable.</li>
+            </ul>
+            <li><b>What is state in React?</b></li>
+            <ul>
+                <li>State is a built-in feature in React that allows components to store and manage their own data. It is mutable and can be updated using the '<b>setState()</b>' method.</li>
+            </ul>
+            <li><b>What are React hooks?</b></li>
+            <ul>
+                <li>React hooks are functions that allow functional components to use state and other React features without writing a class. They include '<b>useState</b>', '<b>useEffect</b>', '<b>useContext</b>', and more.</li>
+            </ul>
+            <li><b>What is the purpose of useEffect hook in React?</b></li>
+            <ul>
+                <li>The '<b>useEffect</b>' hook in React is used to perform side effects in functional components. It allows developers to perform tasks such as data fetching, subscriptions, or DOM manipulation after the component has rendered.</li>
+            </ul>
+            <li><b>What is the difference between controlled and uncontrolled components in React?</b></li>
+            <ul>
+                <li>Controlled components: In controlled components, form data is managed by React state. Input elements receive their current value through props and notify changes through callbacks such as '<b>onChange</b>'.</li>
+                <li>Uncontrolled components: In uncontrolled components, form data is managed by the DOM itself. The input elements maintain their own state internally, and React does not control their value.</li>
+            </ul>
+            <li><b>What is React Router?</b></li>
+            <ul>
+                <li>React Router is a popular routing library for React applications. It allows developers to create single-page applications with multiple views and navigate between them using declarative routing.</li>
+            </ul>
+            <li><b>What are keys in React and why are they important?</b></li>
+            <ul>
+                <li>Keys are special attributes that are used to uniquely identify elements in a list of React components. They help React identify which items have changed, are added, or are removed, improving performance and rendering efficiency.</li>
+            </ul>
+            <li><b>What are React fragments?</b></li>
+            <ul>
+                <li>React fragments allow you to return multiple elements from a component's render method without adding extra nodes to the DOM. They provide a cleaner way to structure and organize your JSX code without introducing unnecessary wrapper elements.</li>
+            </ul>
+            <li><b>What is the useContext hook used for in React?</b></li>
+            <ul>
+                <li>The '<b>useContext</b>' hook is used to consume values from React context without nesting. It allows functional components to access context values that were set by a provider higher up in the component tree.</li>
+            </ul>
+            <li><b>Explain the concept of lifting state up in React.</b></li>
+            <ul>
+                <li>Lifting state up is a pattern in React where the state is moved from a child component to a parent component. This allows multiple child components to share the same state and ensures that changes to the state in one child component are reflected in all other child components that share the same state.</li>
+            </ul>
+            <li><b>What is the purpose of the useMemo hook in React?</b></li>
+            <ul>
+                <li>The '<b>useMemo</b>' hook is used to memoize expensive calculations so that they are only re-computed when their dependencies change. It can improve performance by avoiding unnecessary re-renders of components when the result of a calculation has not changed.</li>
+            </ul>
+            <li><b>What is React context?</b></li>
+            <ul>
+                <li>React context is a feature that allows you to share data between components without having to explicitly pass props through every level of the component tree. It provides a way to pass data down the component tree without the need for prop drilling.</li>
+            </ul>
+        </ol>
+    </div>
+</div>
+<script>
+    const correctAnswers = {
+        q1: 'A',
+        q2: 'A',
+        q3: 'A',
+        q4: 'A',
+        q5: 'B',
+        q6: 'B',
+        q7: 'B',
+        q8: 'A',
+        q9: 'C',
+        q10: 'B',
+        q11: 'C',
+        q12: 'A',
+        q13: 'A',
+        q14: 'C',
+        q15: 'A',
+        q16: 'A',
+        q17: 'A',
+        q18: 'B',
+        q19: 'C',
+        q20: 'B'
+    };
+
+    document.getElementById('start-btn').addEventListener('click', function() {
+        document.getElementById('quiz-content').style.display = 'block';
+        startTimer();
+    });
+
+    function startTimer() {
+        let timer = document.getElementById('timer');
+        let totalSeconds = 0;
+        setInterval(function() {
+            ++totalSeconds;
+            let minutes = Math.floor(totalSeconds / 60);
+            let seconds = totalSeconds % 60;
+            timer.innerText = pad(minutes) + ':' + pad(seconds);
+        }, 1000);
+    }
+
+    function pad(val) {
+        let valString = val + '';
+        if (valString.length < 2) {
+            return '0' + valString;
+        } else {
+            return valString;
+        }
+    }
+
+    document.getElementById('submit-btn').addEventListener('click', function() {
+        document.getElementById('quiz-content').style.display = 'none';
+        document.getElementById('results-container').style.display = 'block';
+
+        let totalQuestions = 20; 
+        let userAnswers = {}; 
+        let correctAnswersCount = 0; 
+
+        for (let i = 1; i <= totalQuestions; i++) {
+            let questionId = 'q' + i;
+            let selectedOption = document.querySelector('input[name="' + questionId + '"]:checked');
+            if (selectedOption) {
+                userAnswers[questionId] = selectedOption.value;
+            }
+        }
+
+        for (let questionId in userAnswers) {
+            if (userAnswers.hasOwnProperty(questionId)) {
+                if (userAnswers[questionId] === correctAnswers[questionId]) {
+                    correctAnswersCount++;
+                }
+            }
+        }
+
+        document.getElementById('correct-answers').innerText = 'Correct Answers: ' + correctAnswersCount;
+        document.getElementById('total-questions').innerText = 'Total Questions: ' + totalQuestions;
+
+        let timer = document.getElementById('timer').innerText;
+        document.getElementById('time-taken').innerText = 'Time Taken: ' + timer;
+    });
+
+    function toggleAnswers() {
+        var answers = document.getElementById("show-answers");
+        var button = document.getElementById("click-show");
+        if (answers.style.display === "none") {
+            answers.style.display = "block";
+            button.innerText = "Hide answers";
+        } else {
+            answers.style.display = "none";
+            button.innerText = "Show answers";
+        }
+    }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-dl2vgS6LoCBqIJNZzm2M2dcKFc5RZLtf3ZhxxvH4ZCkD51HPXcgRc9wnTj46K65r" crossorigin="anonymous"></script>
+</body>
+</html>

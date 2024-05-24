@@ -1,0 +1,247 @@
+body{
+    background-color: #f4f4f4;
+}
+.back {
+    background-color: #6a5cea;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#imagezoom {
+    animation: zoomOut 2s ease-in-out forwards;
+    transform-origin: center;
+}
+.contane {
+    display: none; /* Hide the container initially */
+}
+@media(max-width: 768px){
+    body{
+        height: 50vh;
+        width: 50vh;
+    }
+    #imagezoom{
+        animation: zoomin 2s ease-in-out forwards;
+    }
+}
+@keyframes zoomin {
+    0% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(0.5);
+    }
+}
+@keyframes zoomOut {
+    0% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 768px){
+    .container{
+        display: block;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container img{
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* .container h1{
+    animation: slideIn 1s forwards;
+} */
+#changingText {
+    color: yellow;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid; /* Add a blinking cursor */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100px) translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+
+}
+
+.container img {
+    margin-left: 20px;
+    height: 15rem;
+    border-radius: 10px;
+    animation: slideFromRight 1s forwards, shakeUpDown 3s infinite alternate;
+}
+
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes shakeUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(-100px);
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.services{
+    margin-left: 10px;
+}
+.services h1{
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+.online{
+    display: flex;
+    gap: 5vh;
+}
+.carding{
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .online {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .carding {
+        margin: 10px;
+        text-align: center;
+    }
+}
+
+.about-us h1,.community h1, .support h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.about-us, .support, .community, .contan, .contante-us{
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+/* Popup styles */
+.login-popup {
+    display: none;
+    position: fixed;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    padding: 20px;
+    transition: opacity 0.3s ease;
+
+}
+
+.popup-content {
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.close {
+    position: absolute;
+    font-size: 3rem;
+    top: -5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+/* Form styles */
+#loginForm label {
+    display: block;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"],
+#loginForm input[type="radio"] {
+    display: inline-block; /* Align inputs in startline */
+    vertical-align: middle; /* Align inputs vertically in the middle */
+    margin-bottom: 10px; /* Add spacing between inputs */
+}
+
+#loginForm button {
+    display: block;
+    margin: 20px auto 0;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+}
+
+/* offline style */
+
+.offline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+.offline img {
+    height: 30vh;
+    clip-path: circle(50%);
+    animation: offline-spin 3s infinite;
+}
+@keyframes offline-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.offline {
+    display: none;
+}
+.offline p {
+    color: red;
+}

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplelearn // Web Development // JavaScript</title>
+    <link rel="icon" href="loco.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        iframe{
+            width: 800px;
+            height: 400px;
+            border: 20px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 789px){
+            iframe{
+                height: 100%;
+                width: 100%;
+            }
+            *{
+                margin-left: 5px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        }
+        h1{
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .css, img{
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #quiz-container, .interview-questions {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        #results-container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .numbered-dl {
+            counter-reset: item;
+        }
+
+        /* Style for the <dt> element */
+        .numbered-dl dt {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .numbered-dl dd {
+            margin-left: 0;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            counter-increment: item;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="main.html" title="Simple Learn Home">
+                <img src="logo.png" alt="Logo" title="Simple Learn Home" width="30" height="30" class="d-inline-block align-text-top">
+                Welcome
+            </a>
+        </div>
+    </nav>
+    <div class="css">
+        <h1>JavaScript Tutorial</h1>
+        <h2>What Is JavaScript?</h2>
+        <p><span style="background-color: lightblue;">JavaScript is a powerful programming language that can add interactivity to a website. It was invented by Brendan Eich.</span> JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games, animated 2D and 3D graphics, comprehensive database-driven apps, and much more!</p>
+        <h2>History of JavaScript</h2>
+        <p>It was created in 1995 by Brendan Eich while he was an engineer at Netscape. It was originally going to be named LiveScript but was renamed. Unlike most programming languages, JavaScript language has no concept of input or output. It is designed to run as a scripting language in a host environment, and it is up to the host environment to provide mechanisms for communicating with the outside world. The most common host environment is the browser. </p>
+        <h2>Features of JavaScript</h2>
+        <p>According to a recent survey conducted by Stack Overflow, JavaScript is the most popular language on earth. </p>
+        <p>With advances in browser technology and JavaScript having moved into the server with Node.js and other frameworks, JavaScript is capable of so much more. </p>
+        <p>Here are a few things that we can do with JavaScript: </p>
+        <ul>
+            <li>JavaScript was created in the first place for DOM manipulation. Earlier websites were mostly static, after JS was created dynamic Web sites were made.</li>
+            <li>Functions in JS are objects. They may have properties and methods just like other objects. They can be passed as arguments in other functions.</li>
+            <li>Performs Form Validation although the forms are created using HTML.</li>
+            <li>No compiler is needed.</li>
+        </ul>
+        <div class="ratio ratio-16x9">
+        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220714150931/JavaScript-Introduction.jpg" alt="JavaScript">
+        </div>
+        <h2>JavaScript Video Tutorial</h2><br>
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/R81DdtlPrqU" title="YouTube video" allowfullscreen></iframe>
+        </div>
+        <!-- <iframe src="https://www.youtube.com/embed/R81DdtlPrqU" frameborder="0" allowfullscreen></iframe> -->
+        <h2>JavaScript Notes </h2><br>
+        <button id="notes-btn" class="btn btn-success">Show Notes</button>
+        <div id="notes-content" style="display: none;">
+        <iframe src="Css.pdf" frameborder="0"></iframe>
+        </div><br>
+        <h2>Download JavaScript Notes</h2>
+        <p>You can access <b>JavaScript</b> notes for free by <a href="Css.pdf" download="CSS NOTES">Click here </a></p>
+    </div>
+    <div id="quiz-container">
+        <h2>JavaScript Quiz</h2>
+        <button id="start-btn" class="btn btn-success" >Start Quiz</button>
+        <div id="quiz-content" style="display: none;"><br>
+        <span >Timer : </span><span id="timer">00:00</span><br>
+        <div id="question1">
+            <p>1. Inside which HTML element do we put the JavaScript?</p>
+            <input type="radio" name="q1" value="A"> A. &lt;script><br>
+            <input type="radio" name="q1" value="B"> B. &lt;scripting><br>
+            <input type="radio" name="q1" value="C"> C. &lt;javascript><br>
+            <input type="radio" name="q1" value="D"> D. &lt;js><br>
+        </div><br>
+        <div id="question2">
+            <p>2. What is the correct JavaScript syntax to change the content of the HTML element below?</p>
+            <p>&lt;p id="demo">This is a demonstration.&lt;/p></p>
+            <input type="radio" name="q2" value="A"> A. document.getElement("p").innerHTML = "Hello World!";<br>
+            <input type="radio" name="q2" value="B"> B. document.getElementByName("p").innerHTML = "Hello World!";<br>
+            <input type="radio" name="q2" value="C"> C. #demo.innerHTML = "Hello World!";<br>
+            <input type="radio" name="q2" value="D"> D. document.getElementById("demo").innerHTML = "Hello World!";<br>
+        </div><br>
+        <div id="question3">
+            <p>3. How to write an IF statement in JavaScript?</p>
+            <input type="radio" name="q3" value="A"> A. if i = 5<br>
+            <input type="radio" name="q3" value="B"> B. if i = 5 then<br>
+            <input type="radio" name="q3" value="C"> C. if i = 5 then<br>
+            <input type="radio" name="q3" value="D"> D. if i == 5 then<br>
+        </div><br>
+        <div id="question4">
+            <p>4. Where is the correct place to insert a JavaScript?</p>
+            <input type="radio" name="q4" value="A"> A. Both the &lt;head> section and the &lt;body> section are correct<br>
+            <input type="radio" name="q4" value="B"> B. The &lt;body> section<br>
+            <input type="radio" name="q4" value="C"> C. The &lt;head> section<br>
+        </div><br>
+        <div id="question5">
+            <p>5. What is the correct syntax for referring to an external script called "xxx.js"?</p>
+            <input type="radio" name="q5" value="A"> A. &lt;script src="xxx.js"><br>
+            <input type="radio" name="q5" value="B"> B. &lt;script href="xxx.js"><br>
+            <input type="radio" name="q5" value="C"> C. &lt;script name="xxx.js"><br>
+        </div><br>
+        <div id="question6">
+            <p>6. The external JavaScript file must contain the &lt;script> tag.</p>
+            <input type="radio" name="q6" value="A"> A. False<br>
+            <input type="radio" name="q6" value="B"> B. True<br>
+        </div><br>
+        <div id="question7">
+            <p>7. How do you write "Hello World" in an alert box?</p>
+            <input type="radio" name="q7" value="A"> A. msgBox("Hello World");<br>
+            <input type="radio" name="q7" value="B"> B. alert("Hello World");<br>
+            <input type="radio" name="q7" value="C"> C. msg("Hello World");<br>
+            <input type="radio" name="q7" value="D"> D. alertBox("Hello World");<br>
+        </div><br>
+        <div id="question8">
+            <p>8. How do you create a function in JavaScript?</p>
+            <input type="radio" name="q8" value="A"> A. function:myFunction()<br>
+            <input type="radio" name="q8" value="B"> B. function = myFunction()<br>
+            <input type="radio" name="q8" value="C"> C. function myFunction()<br>
+        </div><br>
+        <div id="question9">
+            <p>9. How do you call a function named "myFunction"?</p>
+            <input type="radio" name="q9" value="A"> A. call myFunction()<br>
+            <input type="radio" name="q9" value="B"> B. myFunction()<br>
+            <input type="radio" name="q9" value="C"> C. call function myFunction()<br>
+        </div><br>
+        <div id="question10">
+            <p>10. How to write an IF statement for executing some code if "i" is NOT equal to 5?</p>
+            <input type="radio" name="q10" value="A"> A. if (i <> 5)<br>
+            <input type="radio" name="q10" value="B"> B. if (i!= 5)<br>
+            <input type="radio" name="q10" value="C"> C. if i =! 5 then<br>
+            <input type="radio" name="q10" value="D"> D. if i <> 5<br>
+        </div><br>
+        <div id="question11">
+            <p>11. How does a WHILE loop start?</p>
+            <input type="radio" name="q11" value="A"> A. while (i <= 10)<br>
+            <input type="radio" name="q11" value="B"> B. while i = 1 to 10<br>
+            <input type="radio" name="q11" value="C"> C. while ( i <= 10 ;i++)<br>
+        </div><br>
+        <div id="question12">
+            <p>12. How does a FOR loop start?</p>
+            <input type="radio" name="q12" value="A"> A. for ( i <= 5 ;i++)<br>
+            <input type="radio" name="q12" value="B"> B. for ( i = 0; i <= 5 ;i++)<br>
+            <input type="radio" name="q12" value="C"> C. for (i = 0; i <= 5)<br>
+            <input type="radio" name="q12" value="D"> D. for i = 1 to 5<br>
+        </div><br>
+        <div id="question13">
+            <p>13. How can you add a comment in a JavaScript?</p>
+            <input type="radio" name="q13" value="A"> A. &lt;!--This is a comment--><br>
+            <input type="radio" name="q13" value="B"> B. //This is a comment<br>
+            <input type="radio" name="q13" value="C"> C. This is a comment<br>
+        </div><br>
+        <div id="question14">
+            <p>14. How to insert a comment that has more than one line?</p>
+            <input type="radio" name="q14" value="A"> A. /*This comment has more than one line*/<br>
+            <input type="radio" name="q14" value="B"> B. //This comment has more than one line//<br>
+            <input type="radio" name="q14" value="C"> C. &lt;!--This comment has more than one line--><br>
+        </div><br>
+        <div id="question15">
+            <p>15. What is the correct way to write a JavaScript array?</p>
+            <input type="radio" name="q15" value="A"> A. var colors = (1:"red", 2:"green", 3:"blue")<br>
+            <input type="radio" name="q15" value="B"> B. var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue")<br>
+            <input type="radio" name="q15" value="C"> C. var colors = "red", "green", "blue"<br>
+            <input type="radio" name="q15" value="D"> D. var colors = ["red", "green", "blue"]<br>
+        </div><br>
+        <div id="question16">
+            <p>16. How do you round the number 7.25, to the nearest integer?</p>
+            <input type="radio" name="q16" value="A"> A. round(7.25)<br>
+            <input type="radio" name="q16" value="B"> B. rnd(7.25)<br>
+            <input type="radio" name="q16" value="C"> C. Math.round(7.25)<br>
+            <input type="radio" name="q16" value="D"> D. Math.rnd(7.25)<br>
+        </div><br>
+        <div class="d-flex justify-content-center align-items-center" >
+            <button id="submit-btn" class="btn btn-info">Submit</button>
+        </div>
+    </div>
+    </div>
+    
+    <div id="results-container">
+        <h2>Results</h2>
+        <p id="correct-answers">Correct Answers: 0</p>
+        <p id="total-questions">Total Questions: 0</p>
+    </div>
+    
+    <div class="interview-questions">
+        <h2>Additional JavaScript Interview Questions</h2>
+        <dl class="numbered-dl">
+            <dt>Core JavaScript Concepts:</dt>
+            <dd>1. What is closure in JavaScript?</dd>
+            <dd>2. Explain hoisting in JavaScript.</dd>
+            <dd>3. What is the event loop in JavaScript?</dd>
+            <dd>4. Differentiate between <b>'null'</b> and <b>'undefined'</b>.</dd>
+            <dd>5. Explain the difference between <b>'=='</b> and <b>'==='</b> in JavaScript.</dd>
+        </dl>
+        <dl class="numbered-dl">
+            <dt>Object-Oriented JavaScript:</dt>
+            <dd>What is prototypal inheritance in JavaScript?</dd>
+            <dd> How do you create classes in JavaScript?</dd>
+            <dd>Explain the concept of <b>'this'</b> keyword in JavaScript.</dd>
+            <dd>What is the difference between object and class in JavaScript?</dd>
+            <dd>How do you implement inheritance in JavaScript?</dd>
+        </dl>
+        <dl class="numbered-dl">
+            <dt>Asynchronous JavaScript:</dt>
+            <dd>What are promises in JavaScript?</dd>
+            <dd>Explain the <b>'async'</b> and <b>'await'</b> keywords in JavaScript.</dd>
+            <dd>What is the purpose of <b>'setTimeout'</b> function?</dd>
+            <dd>How do you handle errors in asynchronous JavaScript?</dd>
+            <dd>Explain the concept of callback functions.</dd>
+        </dl>
+        <dl class="numbered-dl">
+            <dt>ES6+ Features:</dt>
+            <dd>What are template literals and how do you use them?</dd>
+            <dd>What is destructuring in JavaScript?</dd>
+            <dd>Explain the arrow functions in JavaScript.</dd>
+            <dd>What are <b>'let'</b> and <b>'const'</b> keywords?</dd>
+            <dd>How do you import/export modules in JavaScript?</dd>
+        </dl>
+        <dl class="numbered-dl">
+            <dt>DOM Manipulation:</dt>
+            <dd>How do you select elements in the DOM?</dd>
+            <dd>Explain event delegation in JavaScript.</dd>
+            <dd>What is the purpose of <b>'addEventListener'</b> method?</dd>
+            <dd>How do you create and remove elements dynamically in the DOM?</dd>
+            <dd>What is the <b>'innerHTML'</b> property used for?</dd>
+        </dl>
+        <dl class="numbered-dl">
+            <dt>Error Handling:</dt>
+            <dd>What are JavaScript exceptions?</dd>
+            <dd>How do you handle exceptions in JavaScript?</dd>
+            <dd>Explain the <b>'try...catch'</b> statement.</dd>
+            <dd>What is the purpose of the finally block?</dd>
+            <dd>How do you throw custom errors in JavaScript?</dd>
+        </dl>
+        <dl class="numbered-dl">
+            <dt>Testing and Debugging:</dt>
+            <dd>What tools can you use for JavaScript debugging?</dd>
+            <dd>Explain the concept of unit testing in JavaScript.</dd>
+            <dd>How do you debug asynchronous JavaScript code?</dd>
+            <dd>What is the purpose of console.log in JavaScript debugging?</dd>
+            <dd>What is a JavaScript debugger statement?</dd>
+        </dl>
+    </div>
+    <h1>All the best for your future 😊😊</h1>
+</body>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const correctAnswers = {
+        q1: 'A',
+        q2: 'D',
+        q3: 'D',
+        q4: 'A',
+        q5: 'B',
+        q6: 'B',
+        q7: 'C',
+        q8: 'C',
+        q9: 'B',
+        q10: 'B',
+        q11: 'A',
+        q12: 'C',
+        q13: 'B',
+        q14: 'A',
+        q15: 'D',
+        q16: 'C'
+        // Add more questions and answers here
+    };
+
+    // Calculate the total number of questions
+    const totalQuestions = Object.keys(correctAnswers).length;
+
+    // Function to clear all answers
+    function clearAnswers() {
+        const inputs = document.querySelectorAll('input[type="radio"]');
+        inputs.forEach(input => {
+            input.checked = false;
+        });
+    }
+    
+    // Function to show the quiz content
+    function showQuizContent() {
+        document.getElementById('quiz-content').style.display = 'block';
+    }
+
+    // Function to start the timer
+    function startTimer() {
+        const startTime = Date.now();
+        const timerDisplay = document.getElementById('timer');
+        const timerInterval = setInterval(() => {
+            const elapsedTime = Date.now() - startTime;
+            const minutes = Math.floor(elapsedTime / 60000);
+            const seconds = ((elapsedTime % 60000) / 1000).toFixed(0);
+            timerDisplay.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+        }, 1000);
+        return { startTime, timerInterval };
+    }
+
+    // Add event listener for the start button
+    document.getElementById('start-btn').addEventListener('click', function() {
+        showQuizContent();
+        const { startTime, timerInterval } = startTimer();
+        // Store the start time and timer interval ID so they can be used later
+        this.dataset.startTime = startTime;
+        this.dataset.timerIntervalId = timerInterval;
+    });
+
+    // Add event listener for the submit button
+    document.getElementById('submit-btn').addEventListener('click', function() {
+        // Check if all questions have been answered
+        // const allQuestionsAnswered = Array.from(document.querySelectorAll('input[type="radio"]')).every(input => input.checked);
+        // if (!allQuestionsAnswered) {
+        //     alert('Please answer all questions before submitting.');
+        //     return; // Exit the function if not all questions are answered
+        // }
+
+        // Initialize the correct answers count
+        let correctAnswersCount = 0;
+
+        // Check each question
+        for (let question in correctAnswers) {
+            const userAnswer = document.querySelector(`input[name="${question}"]:checked`).value;
+            if (userAnswer === correctAnswers[question]) {
+                correctAnswersCount++;
+            }
+        }
+
+        // Calculate the elapsed time
+        const startTime = parseInt(this.dataset.startTime);
+        const elapsedTime = Date.now() - startTime;
+        const minutes = Math.floor(elapsedTime / 60000);
+        const seconds = ((elapsedTime % 60000) / 1000).toFixed(0);
+
+        // Display the results including time taken
+        document.getElementById('correct-answers').textContent = `Correct Answers: ${correctAnswersCount}`;
+        document.getElementById('total-questions').textContent = `Total Questions: ${totalQuestions}`;
+        document.getElementById('time-taken').textContent = `Time Taken: ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+
+        // Clear answers after submission
+        clearAnswers();
+
+        // Stop the timer
+        clearInterval(this.dataset.timerIntervalId);
+    });
+
+    // Add event listener for beforeunload event to clear data when page is refreshed or navigated away from
+    window.addEventListener('beforeunload', function(event) {
+        // Clear answers
+        clearAnswers();
+        // Clear timer interval if exists
+        if (document.getElementById('start-btn').dataset.timerIntervalId) {
+            clearInterval(document.getElementById('start-btn').dataset.timerIntervalId);
+        }
+    });
+});
+
+
+</script>
+</html>

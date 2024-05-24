@@ -1,0 +1,121 @@
+
+.web-develop{
+    background-color: blue;
+    color: white;
+    height: 100%;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+.web, .merm {
+    gap: 10px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.carding{
+    animation: slideFromRight 5s forwards;
+    width: 18rem;
+}
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.web-develop h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+    .web, .merm{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card, .cards {
+        animation: slideIn 5s forwards;
+        margin: 10px;
+        text-align: center;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100px) translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+
+}
+@keyframes slideFrom {
+    0% {
+        transform: translateX(00px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.back-end{
+    background-color: red;
+    color: white;
+    height: 100%;
+    width: auto;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.back-end h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.backz{
+    display: flex;
+    gap: 10px;
+}
+@media (max-width: 768px) {
+    .body{
+        width: 50%;
+    }
+    .backz{
+        display: block;
+        gap: 10px;
+    }
+}
+.aboutus{
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.carding{
+    text-align: center;
+}
+
+
+
+.ration, .about-mern{
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    animation: slideFromRight 1s forwards;
+}

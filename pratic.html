@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        .offline {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        img {
+            height: 30vh;
+            clip-path: circle(50%);
+            animation: offline-spin 3s infinite;
+        }
+        @keyframes offline-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .offline {
+            display: none;
+        }
+        .offline p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="online-offline">
+    <div class="online">
+        <p>We welcome you to our new brand webpage</p>
+    </div>
+    <div class="offline">
+        <img src="loco.png" alt="">
+        <p>No Internet connection.........</p>
+        <button onclick="location.reload()">Refresh</button>
+    </div>
+
+</div>
+    <script>
+        window.addEventListener('load', function () {
+            function updateOnlineStatus(event) {
+                var online = navigator.onLine;
+                var onlineDiv = document.querySelector('.online');
+                var offlineDiv = document.querySelector('.offline');
+                if (online) {
+                    onlineDiv.style.display = 'block';
+                    offlineDiv.style.display = 'none';
+                } else {
+                    onlineDiv.style.display = 'none';
+                    offlineDiv.style.display = 'block';
+                }
+            }
+
+            window.addEventListener('online', updateOnlineStatus);
+            window.addEventListener('offline', updateOnlineStatus);
+            updateOnlineStatus();
+        });
+        
+    </script>
+</body>
+</html>

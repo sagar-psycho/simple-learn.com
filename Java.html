@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplelearn // Web Development // JAVA</title>
+    <link rel="icon" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        iframe {
+            width: 800px;
+            height: 400px;
+            border: 2px solid rgb(93, 91, 91);
+        }
+        @media (max-width: 789px) {
+            iframe {
+                height: 200px;
+                width: 250px;
+            }
+        }
+        h1 {
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .html, #quiz-container, #results-container, .interview-questions{
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="main.html" title="Simple Learn Home">
+                <img src="logo.png" alt="Logo" title="Simple Learn Home" width="30" height="24" class="d-inline-block align-text-top">
+                Welcome
+            </a>
+        </div>
+    </nav>
+    <div class="html">
+        <h1>JAVA Tutorial</h1>
+        <h2>What Is JAVA?</h2>
+        <p>
+            Java is a versatile, object-oriented programming language developed by Sun Microsystems (now owned by Oracle Corporation) in the mid-1990s. It was designed to be platform-independent, meaning that Java code can run on any device that has a Java Virtual Machine (JVM) installed, regardless of the underlying hardware and operating system
+        </p>
+        <p>
+            Key features of Java include its simplicity, portability, and robustness. It is widely used for developing various types of applications, including web applications, mobile apps (Android), enterprise software, and large-scale systems. Java's syntax is similar to that of C++, making it relatively easy for programmers to transition between the two languages.
+        </p>
+        <p>
+            One of Java's strengths is its extensive standard library, which provides pre-built modules for common tasks such as networking, database access, and graphical user interface (GUI) development. Additionally, Java supports multithreading, allowing developers to create concurrent programs that can execute multiple tasks simultaneously.
+        </p>
+        <p>
+            Overall, Java's combination of versatility, portability, and robustness has made it one of the most popular programming languages in the world, with a vast ecosystem of tools, frameworks, and libraries supporting its development.
+        </p>
+        <h2>Why learn Java?</h2>
+        <p>Learning Java can be valuable for several reasons:</p>
+        <ol>
+            <li><b>Versatility</b>: Java is used in a wide range of applications, including web development, mobile app development (Android), enterprise software, scientific computing, and more. By learning Java, you gain the ability to work on diverse projects across different industries.</li>
+            <li><b>Portability:</b> Java's "write once, run anywhere" mantra means that code written in Java can run on any device that has a Java Virtual Machine (JVM) installed. This portability makes Java an excellent choice for developing cross-platform applications.</li>
+            <li><b>Industry demand:</b> Java has been a popular programming language for decades and continues to be in high demand in the job market. Many large companies and organizations use Java for their software development needs, creating a steady demand for Java developers.</li>
+            <li><b>Robustness:</b> Java was designed with a strong emphasis on reliability and robustness. Its strict compile-time checks, automatic memory management (garbage collection), and exception handling mechanisms help developers write stable and secure code.</li>
+            <li><b>Community and ecosystem:</b> Java has a vast and active community of developers worldwide. This community has created a rich ecosystem of tools, frameworks, and libraries to support Java development, making it easier and more efficient to build Java applications.</li>
+            <li><b>Object-oriented principles:</b> Java is an object-oriented programming (OOP) language, which is a fundamental paradigm used in modern software development. Learning Java helps you understand key OOP concepts such as encapsulation, inheritance, and polymorphism, which are widely used in many programming languages.</li>
+            <li><b>Career opportunities:</b> With the widespread use of Java across various industries, learning Java can open up numerous career opportunities. Whether you're interested in web development, mobile app development, enterprise software, or other fields, Java skills are highly transferable and sought after by employers.</li>
+        </ol>
+        <div class="ratio ratio-16x9">
+            <img src="https://www.devopsschool.com/blog/wp-content/uploads/2022/03/java_logo_icon_168609.png" alt="HTML">
+        </div><br><br>
+        <h2>Java Video Tutorial</h2><br>
+        <!-- <iframe src="https://www.youtube.com/embed/CFD9EFcNZTQ?si=ho7yM02_vM_bh-b6" frameborder="0" allowfullscreen></iframe> -->
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/CFD9EFcNZTQ?si=ho7yM02_vM_bh-b6" title="YouTube video" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="quiz-container">
+        <h2>JAVA Quiz</h2>
+        <button id="start-btn" class="btn btn-success">Start Quiz</button>
+        <div id="quiz-content" style="display: none;">
+            <span>Timer: </span><span id="timer">00:00</span><br><br>
+            <div id="question1">
+                <p>1. What is the difference between an abstract class and an interface in Java?</p>
+                <input type="radio" name="q1" value="A"> A. An abstract class can have both abstract and non-abstract methods, while an interface can only have abstract methods.<br>
+                <input type="radio" name="q1" value="B"> B. An abstract class cannot have constructors, while an interface can have constructors.<br>
+                <input type="radio" name="q1" value="C"> C. An abstract class cannot have fields, while an interface can have fields.<br>
+            </div><br>
+            <div id="question2">
+                <p>2. What is the purpose of the 'static' keyword in Java?</p>
+                <input type="radio" name="q2" value="A"> A. To indicate that a variable or method belongs to the class, rather than to instances of the class.<br>
+                <input type="radio" name="q2" value="B"> B. To indicate that a variable or method can be accessed from any other class.<br>
+                <input type="radio" name="q2" value="C"> C. To indicate that a variable or method cannot be overridden.<br>
+            </div><br>
+            <div id="question3">
+                <p>3. What is a constructor in Java?</p>
+                <input type="radio" name="q3" value="A"> A. A method used to destroy objects.<br>
+                <input type="radio" name="q3" value="B"> B. A method used to initialize objects.<br>
+                <input type="radio" name="q3" value="C"> C. A method used to access object properties.<br>
+            </div><br>
+            <div id="question4">
+                <p>4. What is the difference between '==' and '.equals()' in Java?</p>
+                <input type="radio" name="q4" value="A"> A. '==' compares object references, while '.equals()' compares object values.<br>
+                <input type="radio" name="q4" value="B"> B. They are exactly the same and can be used interchangeably.<br>
+                <input type="radio" name="q4" value="C"> C. '.equals()' compares object references, while '==' compares object values.<br>
+            </div><br>
+            <div id="question5">
+                <p>5. What is the purpose of the 'final' keyword in Java?</p>
+                <input type="radio" name="q5" value="A"> A. To indicate that a method cannot be overridden.<br>
+                <input type="radio" name="q5" value="B"> B. To indicate that a variable cannot be changed.<br>
+                <input type="radio" name="q5" value="C"> C. To indicate that a class cannot be extended.<br>
+            </div><br>
+            <div id="question6">
+                <p>6. What is the difference between 'public', 'private', 'protected', and 'default' access modifiers in Java?</p>
+                <input type="radio" name="q6" value="A"> A. They all provide the same level of access control.<br>
+                <input type="radio" name="q6" value="B"> B. 'public' allows access from any other class, 'private' allows access only within the same class, 'protected' allows access within the same package and subclasses, and 'default' allows access only within the same package.<br>
+                <input type="radio" name="q6" value="C"> C. 'public' allows access from any other class, 'private' allows access only within the same class, 'protected' allows access within the same package, and 'default' allows access from any class in any package.<br>
+            </div><br>
+            <div id="question7">
+                <p>7. What is the purpose of inheritance in Java?</p>
+                <input type="radio" name="q7" value="A"> A. To allow a class to inherit properties and behavior from another class.<br>
+                <input type="radio" name="q7" value="B"> B. To create multiple instances of a class.<br>
+                <input type="radio" name="q7" value="C"> C. To encapsulate data and methods.<br>
+            </div><br>
+            <div id="question8">
+                <p>8. What is method overloading in Java?</p>
+                <input type="radio" name="q8" value="A"> A. Defining multiple methods with the same name but different parameter lists in the same class.<br>
+                <input type="radio" name="q8" value="B"> B. Defining multiple methods with the same name and parameter lists in the same class.<br>
+                <input type="radio" name="q8" value="C"> C. Defining multiple methods with the same name and return type in the same class.<br>
+            </div><br>
+            <div id="question9">
+                <p>9. What is method overriding in Java?</p>
+                <input type="radio" name="q9" value="A"> A. Redefining a method in the subclass with the same signature as the method in the superclass.<br>
+                <input type="radio" name="q9" value="B"> B. Defining a method with the same name but different parameter lists in the same class.<br>
+                <input type="radio" name="q9" value="C"> C. Defining a method with the same name and parameter lists in the same class.<br>
+            </div><br>
+            <div id="question10">
+                <p>10. What is the purpose of the 'this' keyword in Java?</p>
+                <input type="radio" name="q10" value="A"> A. To refer to the current instance of the class.<br>
+                <input type="radio" name="q10" value="B"> B. To refer to the parent class.<br>
+                <input type="radio" name="q10" value="C"> C. To refer to the child class.<br>
+            </div><br>
+            <div id="question11">
+                <p>11. What is a package in Java?</p>
+                <input type="radio" name="q11" value="A"> A. A collection of classes and interfaces.<br>
+                <input type="radio" name="q11" value="B"> B. A collection of variables and methods.<br>
+                <input type="radio" name="q11" value="C"> C. A collection of objects.<br>
+            </div><br>
+            <div id="question12">
+                <p>12. What is method hiding in Java?</p>
+                <input type="radio" name="q12" value="A"> A. Redefining a static method in the subclass with the same signature as the method in the superclass.<br>
+                <input type="radio" name="q12" value="B"> B. Redefining a static method in the superclass with the same signature as the method in the subclass.<br>
+                <input type="radio" name="q12" value="C"> C. Redefining a non-static method in the subclass with the same signature as the method in the superclass.<br>
+            </div><br>
+            <div id="question13">
+                <p>13. What is the 'super' keyword used for in Java?</p>
+                <input type="radio" name="q13" value="A"> A. To refer to the current instance of the class.<br>
+                <input type="radio" name="q13" value="B"> B. To refer to the parent class.<br>
+                <input type="radio" name="q13" value="C"> C. To refer to the child class.<br>
+            </div><br>
+            <div id="question14">
+                <p>14. What is the purpose of the 'static' block in Java?</p>
+                <input type="radio" name="q14" value="A"> A. To initialize static variables.<br>
+                <input type="radio" name="q14" value="B"> B. To initialize instance variables.<br>
+                <input type="radio" name="q14" value="C"> C. To execute code when the class is loaded.<br>
+            </div><br>
+            <div id="question15">
+                <p>15. What is the purpose of the 'transient' keyword in Java?</p>
+                <input type="radio" name="q15" value="A"> A. To indicate that a variable cannot be serialized.<br>
+                <input type="radio" name="q15" value="B"> B. To indicate that a variable should be serialized.<br>
+                <input type="radio" name="q15" value="C"> C. To indicate that a variable should be skipped during serialization.<br>
+            </div><br>
+            <div id="question16">
+                <p>16. What is the difference between an ArrayList and a LinkedList in Java?</p>
+                <input type="radio" name="q16" value="A"> A. ArrayList allows faster insertion and deletion, while LinkedList allows faster random access.<br>
+                <input type="radio" name="q16" value="B"> B. ArrayList allows faster random access, while LinkedList allows faster insertion and deletion.<br>
+                <input type="radio" name="q16" value="C"> C. There is no difference between ArrayList and LinkedList.<br>
+            </div><br>
+            <div id="question17">
+                <p>17. What is the purpose of the 'volatile' keyword in Java?</p>
+                <input type="radio" name="q17" value="A"> A. To indicate that a variable cannot be changed.<br>
+                <input type="radio" name="q17" value="B"> B. To indicate that a variable should not be accessed by multiple threads.<br>
+                <input type="radio" name="q17" value="C"> C. To indicate that a variable may be changed asynchronously.<br>
+            </div><br>
+            <div id="question18">
+                <p>18. What is the difference between '==', '.equals()', and 'compareTo()' when comparing strings in Java?</p>
+                <input type="radio" name="q18" value="A"> A. They are exactly the same and can be used interchangeably.<br>
+                <input type="radio" name="q18" value="B"> B. '==' compares object references, '.equals()' compares object values, and 'compareTo()' compares lexicographic order.<br>
+                <input type="radio" name="q18" value="C"> C. '.equals()' compares object references, '==' compares object values, and 'compareTo()' compares lexicographic order.<br>
+            </div><br>
+            <div id="question19">
+                <p>19. What is the purpose of the 'try-catch-finally' block in Java?</p>
+                <input type="radio" name="q19" value="A"> A. To handle exceptions.<br>
+                <input type="radio" name="q19" value="B"> B. To handle errors.<br>
+                <input type="radio" name="q19" value="C"> C. To handle both exceptions and errors.<br>
+            </div><br>
+            <div id="question20">
+                <p>20. What is the difference between 'throw' and 'throws' in Java?</p>
+                <input type="radio" name="q20" value="A"> A. 'throw' is used to declare an exception, while 'throws' is used to throw an exception.<br>
+                <input type="radio" name="q20" value="B"> B. 'throw' is used to throw an exception, while 'throws' is used to declare an exception.<br>
+                <input type="radio" name="q20" value="C"> C. 'throw' and 'throws' are exactly the same and can be used interchangeably.<br>
+            </div><br>
+            <div class="d-flex justify-content-center align-items-center">
+                <button id="submit-btn" class="btn btn-info">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div id="results-container" style="display: none;">
+        <h2>Results</h2>
+        <p id="correct-answers">Correct Answers: 0</p>
+        <p id="total-questions">Total Questions: 0</p>
+        <p id="time-taken">Time Taken: 00:00</p>
+    </div>
+    <div class="interview-questions">
+        <h2>Additional JAVA Interview Questions</h2>
+        <ol>
+            <h4>Basic Level</h4>
+            <li>What is Java? What are its key features?</li>
+            <li>Explain the difference between JDK, JRE, and JVM.</li>
+            <li>What are the main principles of Object-Oriented Programming (OOP) and how does Java support them?</li>
+            <li>Explain the significance of the 'main()' method in Java.</li>
+            <li>What are the different data types in Java?</li>
+            <h4>Intermediate Level</h4>
+            <li>What is the difference between '==' and '.equals()' method in Java?</li>
+            <li>Explain the concept of inheritance in Java. How is it implemented?</li>
+            <li>What is polymorphism in Java? Provide examples.</li>
+            <li>What is the difference between 'interface' and 'abstract class' in Java?</li>
+            <li>What is the purpose of the 'static' keyword in Java?</li>
+            <h4>Advanced Level</h4>
+            <li>Explain the concept of Exception Handling in Java. How does it work?</li>
+            <li>What are the different ways to create and handle threads in Java?</li>
+            <li>Explain the concept of Generics in Java. How does it improve type safety?</li>
+            <li>What is serialization in Java? How is it implemented?</li>
+            <li>Explain the difference between <b>'HashMap'</b> and '<b>Hashtable</b>'.</li>
+        </ol>
+        <button id="click-show" class="btn btn-danger" onclick="toggleAnswers()">
+            Show answers
+        </button> <br>
+    <div id="show-answers" style="display: none;"><br><br>
+        <h2>Interview questions with answers</h2>
+        <ol>
+        <h4>Basic Level</h4>
+            <li><b>What is Java? What are its key features?</b></li>
+            <ul>
+                <li>Java is a high-level, object-oriented programming language developed by Sun Microsystems. Its key features include platform independence, object-oriented approach, robustness, security, and simplicity.</li>
+            </ul>
+            <li><b>Explain the difference between JDK, JRE, and JVM.</b></li>
+            <ul>
+                <li>JDK (Java Development Kit) is a software development kit that includes tools for developing Java applications. </li>
+                <li>JRE (Java Runtime Environment) is a runtime environment required to run Java applications.</li>
+                <li>JVM (Java Virtual Machine) is an abstract computing machine that provides a runtime environment for executing Java bytecode.</li>
+            </ul>
+            <li><b>What are the main principles of Object-Oriented Programming (OOP) and how does Java support them?</b></li>
+            <ul>
+                <li>The main principles of OOP are encapsulation, inheritance, and polymorphism. Java supports these principles through classes and objects, inheritance, and method overriding.</li>
+            </ul>
+            <li><b>Explain the significance of the 'main()' method in Java.</b></li>
+            <ul>
+                <li>The 'main()' method is the entry point of a Java program. It is where the execution of the program begins. Java applications must have a 'main()' method to be executed.</li>
+            </ul>
+            <li><b>What are the different data types in Java?</b></li>
+            <ul>
+                <li>Java supports two categories of data types: primitive data types (e.g., int, double, boolean) and reference data types (e.g., classes, interfaces, arrays).</li>
+            </ul>
+            <h4>Intermediate Level</h4>
+                <li><b>What is the difference between '==' and '.equals()' method in Java?</b></li>
+                <ul>
+                    <li>The '==' operator is used to compare the memory addresses of objects, while the '.equals()' method is used to compare the contents of objects.</li>
+                </ul>
+                <li><b>Explain the concept of inheritance in Java. How is it implemented?</b></li>
+                <ul>
+                    <li>Inheritance allows a class to inherit properties and behavior from another class. It is implemented in Java using the 'extends' keyword to create a subclass that inherits from a superclass.</li>
+                </ul>
+                <li><b>What is polymorphism in Java? Provide examples.</b></li>
+                <ul>
+                    <li>liPolymorphism allows objects of different types to be treated as objects of a common superclass. It is achieved in Java through method overriding and method overloading.</li>
+                </ul>
+                <li><b>What is the difference between 'interface' and 'abstract class' in Java?</b></li>
+                <ul>
+                    <li>An interface is a collection of abstract methods and constants, while an abstract class can contain abstract methods as well as concrete methods. A class can implement multiple interfaces but can only extend one abstract class.</li>
+                </ul>
+                <li><b>What is the purpose of the 'static' keyword in Java?</b></li>
+                <ul>
+                    <li>The 'static' keyword is used to create class-level variables and methods that belong to the class rather than individual instances of the class. These variables and methods can be accessed without creating an instance of the class.</li>
+                </ul>
+                <h4>Advanced Level</h4>
+                <li><b>Explain the concept of Exception Handling in Java. How does it work?</b></li>
+                <ul>
+                    <li>Exception Handling in Java allows programmers to handle runtime errors gracefully. It involves using try-catch blocks to catch exceptions and handle them appropriately.</li>
+                </ul>
+                <li><b>What are the different ways to create and handle threads in Java?</b></li>
+                <ul>
+                    <li>Threads in Java can be created by extending the <b>'Thread'</b> class or implementing the <b>'Runnable'</b> interface. Thread handling can be done using synchronization, locks, and thread pools.</li>
+                </ul>
+                <li><b>Explain the concept of Generics in Java. How does it improve type safety?</b></li>
+                <ul>
+                    <li>Generics in Java allow the creation of classes and methods that operate on types specified at compile time. They improve type safety by enabling compile-time type checking and reducing the need for explicit type casting.</li>
+                </ul>
+                <li><b>What is serialization in Java? How is it implemented?</b></li>
+                <ul>
+                    <li>Serialization is the process of converting an object into a byte stream, which can be saved to a file or transmitted over a network. In Java, <b>'serialization'</b> is implemented by implementing the Serializable interface and using the <b>'ObjectOutputStream'</b> and '<b>ObjectInputStream</b>' classes.</li>
+                </ul>
+                <li><b>Explain the difference between <b>'HashMap'</b> and '<b>Hashtable</b>'.</b></li>
+                <ul>
+                    <li><b>'HashMap'</b> is not synchronized and allows null keys and values, while <b>'Hashtable'</b> is synchronized and does not allow null keys or values. Additionally, <b>'HashMap'</b> is faster but not thread-safe, while <b>'Hashtable'</b> is slower but thread-safe.</li>
+                </ul>
+            </ol>
+    </div>
+</div>
+<script>
+    const correctAnswers = {
+        q1: 'A',
+        q2: 'A',
+        q3: 'B',
+        q4: 'A',
+        q5: 'B',
+        q6: 'B',
+        q7: 'A',
+        q8: 'A',
+        q9: 'A',
+        q10: 'A',
+        q11: 'A',
+        q12: 'A',
+        q13: 'B',
+        q14: 'C',
+        q15: 'A',
+        q16: 'A',
+        q17: 'C',
+        q18: 'B',
+        q19: 'A',
+        q20: 'A'
+    };
+
+    document.getElementById('start-btn').addEventListener('click', function() {
+        document.getElementById('quiz-content').style.display = 'block';
+        startTimer();
+    });
+
+    function startTimer() {
+        let timer = document.getElementById('timer');
+        let totalSeconds = 0;
+        setInterval(function() {
+            ++totalSeconds;
+            let minutes = Math.floor(totalSeconds / 60);
+            let seconds = totalSeconds % 60;
+            timer.innerText = pad(minutes) + ':' + pad(seconds);
+        }, 1000);
+    }
+
+    function pad(val) {
+        let valString = val + '';
+        if (valString.length < 2) {
+            return '0' + valString;
+        } else {
+            return valString;
+        }
+    }
+
+    document.getElementById('submit-btn').addEventListener('click', function() {
+        document.getElementById('quiz-content').style.display = 'block';
+        document.getElementById('results-container').style.display = 'block';
+
+        let totalQuestions = 20;
+        let userAnswers = {};
+        let correctAnswersCount = 0;
+
+        for (let i = 1; i <= totalQuestions; i++) {
+            let questionId = 'q' + i;
+            let selectedOption = document.querySelector('input[name="' + questionId + '"]:checked');
+            if (selectedOption) {
+                userAnswers[questionId] = selectedOption.value;
+            }
+        }
+
+        for (let questionId in userAnswers) {
+            if (userAnswers.hasOwnProperty(questionId)) {
+                if (userAnswers[questionId] === correctAnswers[questionId]) {
+                    correctAnswersCount++;
+                }
+            }
+        }
+
+        document.getElementById('correct-answers').innerText = 'Correct Answers: ' + correctAnswersCount;
+        document.getElementById('total-questions').innerText = 'Total Questions: ' + totalQuestions;
+
+        let timer = document.getElementById('timer').innerText;
+        document.getElementById('time-taken').innerText = 'Time Taken: ' + timer;
+    });
+    function toggleAnswers() {
+        var answers = document.getElementById("show-answers");
+        var button = document.getElementById("click-show");
+        if (answers.style.display === "none") {
+            answers.style.display = "block";
+            button.innerText = "Hide answers";
+        } else {
+            answers.style.display = "none";
+            button.innerText = "Show answers";
+        }
+    }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-dl2vgS6LoCBqIJNZzm2M2dcKFc5RZLtf3ZhxxvH4ZCkD51HPXcgRc9wnTj46K65r" crossorigin="anonymous"></script>
+</body>
+</html>

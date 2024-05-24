@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplelearn // Web Development // CSS</title>
+    <link rel="icon" href="loco.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        iframe{
+            width: 800px;
+            height: 400px;
+            border: 20px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 789px){
+            iframe{
+                height: 100%;
+                width: 100%;
+            }
+            *{
+                margin-left: 5px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        }
+        h1{
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .css{
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #quiz-container, .interview-questions {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        #results-container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="main.html" title="simple Learn Home">
+                <img src="logo.png" alt="Logo" title="simple Learn Home" width="30" height="24" class="d-inline-block align-text-top">
+                Welcome
+            </a>
+        </div>
+    </nav>
+    <div class="css">
+        <h1>CSS Tutorial</h1>
+        <h2>What Is CSS?</h2>
+        <p>CSS or Cascading Style Sheets is a stylesheet language used to add styles to the HTML document. It describes how HTML elements should be displayed on the web page.</p>
+        <p>CSS was first proposed by Håkon Wium Lie in 1994 and later developed by Lie and Bert Bos, who published the CSS1 specification in 1996.</p>
+        <h2>Why CSS?</h2>
+        <ul>
+            <li><b>CSS saves time:</b> You can write CSS once and reuse the same sheet in multiple HTML pages.</li>
+            <li><b>Easy Maintenance:</b> To make a global change simply change the style, and all elements in all the webpages will be updated automatically.</li>
+            <li><b>Search Engines:</b> CSS is considered a clean coding technique, which means search engines won’t have to struggle to “read” its content.</li>
+            <li><b>Superior styles to HTML:</b> CSS has a much wider array of attributes than HTML, so you can give a far better look to your HTML page in comparison to HTML attributes.</li>
+            <li><b>Offline Browsing:</b> CSS can store web applications locally with the help of an offline cache. Using this we can view offline websites.</li>
+        </ul>
+        <div class="ratio ratio-16x9">
+        <img src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-css/sta-je-css.png" alt="CSS">
+        </div>
+        <h2>CSS Video Tutorial</h2><br>
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/J5KxiOnIrKg" title="YouTube video" allowfullscreen></iframe>
+        </div>
+        <!-- <iframe  src="https://www.youtube.com/embed/J5KxiOnIrKg" frameborder="0" allowfullscreen></iframe><br> -->
+        <h2>CSS Notes </h2><br>
+        <button id="notes-btn" class="btn btn-success">Show Notes</button>
+        <div id="notes-content" style="display: none;">
+        <iframe src="Css.pdf" frameborder="0"></iframe>
+        </div><br>
+        <h2>Download CSS Notes</h2>
+        <p>You can access <b>CSS</b> notes for free by <a href="Css.pdf" download="CSS NOTES">Click here </a></p>
+    </div>
+    <div id="quiz-container">
+        <h2>CSS Quiz</h2>
+        <button id="start-btn" class="btn btn-success">Start Quiz</button>
+        <div id="quiz-content" style="display: none;"><br>
+        <span >Timer : </span><span id="timer">00:00</span><br>
+        <div id="question1">
+            <p>1. What is the CSS property used to change the text color?</p>
+            <input type="radio" name="q1" value="A"> A. color<br>
+            <input type="radio" name="q1" value="B"> B. text-color<br>
+            <input type="radio" name="q1" value="C"> C. font-color<br>
+            <input type="radio" name="q1" value="D"> D. text-style<br>
+        </div><br>
+        <div id="question2">
+            <p>2. Which CSS property is used to add a background color to an element?</p>
+            <input type="radio" name="q2" value="A"> A. bgcolor<br>
+            <input type="radio" name="q2" value="B"> B. background-color<br>
+            <input type="radio" name="q2" value="C"> C. background<br>
+            <input type="radio" name="q2" value="D"> D. color-background<br>
+        </div><br>
+        <div id="question3">
+            <p>3. How do you add a border to an element using CSS?</p>
+            <input type="radio" name="q3" value="A"> A. border-style<br>
+            <input type="radio" name="q3" value="B"> B. border<br>
+            <input type="radio" name="q3" value="C"> C. border-width<br>
+            <input type="radio" name="q3" value="D"> D. border-color<br>
+        </div><br>
+        <div id="question4">
+            <p>4. What CSS property is used to change the font size?</p>
+            <input type="radio" name="q4" value="A"> A. font-size<br>
+            <input type="radio" name="q4" value="B"> B. size<br>
+            <input type="radio" name="q4" value="C"> C. text-size<br>
+            <input type="radio" name="q4" value="D"> D. font-style<br>
+        </div><br>
+        <div id="question5">
+            <p>5. How do you make text bold using CSS?</p>
+            <input type="radio" name="q5" value="A"> A. font-weight: bold<br>
+            <input type="radio" name="q5" value="B"> B. bold<br>
+            <input type="radio" name="q5" value="C"> C. font-bold<br>
+            <input type="radio" name="q5" value="D"> D. text-bold<br>
+        </div><br>
+        <div id="question6">
+            <p>6. What CSS property is used to change the font family?</p>
+            <input type="radio" name="q6" value="A"> A. font-family<br>
+            <input type="radio" name="q6" value="B"> B. font-style<br>
+            <input type="radio" name="q6" value="C"> C. font-type<br>
+            <input type="radio" name="q6" value="D"> D. font-face<br>
+        </div><br>
+        <div id="question7">
+            <p>7. How do you center an element horizontally using CSS?</p>
+            <input type="radio" name="q7" value="A"> A. text-align: center<br>
+            <input type="radio" name="q7" value="B"> B. align: center<br>
+            <input type="radio" name="q7" value="C"> C. center<br>
+            <input type="radio" name="q7" value="D"> D. margin: auto<br>
+        </div><br>
+        <div id="question8">
+            <p>8. What CSS property is used to add a margin to an element?</p>
+            <input type="radio" name="q8" value="A"> A. margin<br>
+            <input type="radio" name="q8" value="B"> B. padding<br>
+            <input type="radio" name="q8" value="C"> C. space<br>
+            <input type="radio" name="q8" value="D"> D. gap<br>
+        </div><br>
+        <div id="question9">
+            <p>9. How do you make text italic using CSS?</p>
+            <input type="radio" name="q9" value="A"> A. font-style: italic<br>
+            <input type="radio" name="q9" value="B"> B. italic<br>
+            <input type="radio" name="q9" value="C"> C. font-italic<br>
+            <input type="radio" name="q9" value="D"> D. text-italic<br>
+        </div><br>
+        <div id="question10">
+            <p>10. What CSS property is used to change the background image of an element?</p>
+            <input type="radio" name="q10" value="A"> A. background-image<br>
+            <input type="radio" name="q10" value="B"> B. image-background<br>
+            <input type="radio" name="q10" value="C"> C. bg-image<br>
+            <input type="radio" name="q10" value="D"> D. image-bg<br>
+        </div><br>
+        <div id="question11">
+            <p>11. How do you add a border radius to an element using CSS?</p>
+            <input type="radio" name="q11" value="A"> A. border-radius<br>
+            <input type="radio" name="q11" value="B"> B. radius<br>
+            <input type="radio" name="q11" value="C"> C. border-round<br>
+            <input type="radio" name="q11" value="D"> D. round-border<br>
+        </div><br>
+        <div id="question12">
+            <p>12. What CSS property is used to change the width of an element?</p>
+            <input type="radio" name="q12" value="A"> A. width<br>
+            <input type="radio" name="q12" value="B"> B. size<br>
+            <input type="radio" name="q12" value="C"> C. dimension<br>
+            <input type="radio" name="q12" value="D"> D. length<br>
+        </div><br>
+        <div id="question13">
+            <p>13. How do you make text underline using CSS?</p>
+            <input type="radio" name="q13" value="A"> A. text-decoration: underline<br>
+            <input type="radio" name="q13" value="B"> B. underline<br>
+            <input type="radio" name="q13" value="C"> C. font-underline<br>
+            <input type="radio" name="q13" value="D"> D. text-underline<br>
+        </div><br>
+        <div id="question14">
+            <p>14. What CSS property is used to change the height of an element?</p>
+            <input type="radio" name="q14" value="A"> A. height<br>
+            <input type="radio" name="q14" value="B"> B. size<br>
+            <input type="radio" name="q14" value="C"> C. dimension<br>
+            <input type="radio" name="q14" value="D"> D. length<br>
+        </div><br>
+        <div id="question15">
+            <p>15. How do you add a box shadow to an element using CSS?</p>
+            <input type="radio" name="q15" value="A"> A. box-shadow<br>
+            <input type="radio" name="q15" value="B"> B. shadow<br>
+            <input type="radio" name="q15" value="C"> C. box-shadow-effect<br>
+            <input type="radio" name="q15" value="D"> D. shadow-box<br>
+        </div><br>
+        <div id="question16">
+            <p>16. What does CSS stand for?</p>
+            <input type="radio" name="q16" value="A"> A. Cumputer Style Sheet<br>
+            <input type="radio" name="q16" value="B"> B. Creative Style Sheet<br>
+            <input type="radio" name="q16" value="C"> C. Cascading Style Sheet<br>
+            <input type="radio" name="q16" value="D"> D. none of the above<br>
+        </div><br>
+        <div class="d-flex justify-content-center align-items-center" >
+            <button id="submit-btn" class="btn btn-info">Submit</button>
+        </div>
+    </div>
+    </div>
+    
+    
+    <div id="results-container">
+        <h2>Results</h2>
+        <p id="correct-answers">Correct Answers: 0</p>
+        <p id="total-questions">Total Questions: 0</p>
+    </div>
+    <div class="interview-questions">
+        <h2>Additional CSS Interview Questions</h2>
+        <ol>
+            <li>What is CSS and what is its purpose in web development?</li>
+            <li>Explain the different ways to include CSS in a web page.</li>
+            <li>What is the difference between inline, internal, and external CSS?</li>
+            <li>How do you select elements with CSS? Explain the various CSS selectors.</li>
+            <li>Describe the box model in CSS. What are its components?</li>
+            <li>What is the clearfix hack and why is it used?</li>
+            <li>How does z-index work in CSS?</li>
+            <li>What is the difference between absolute, relative, fixed, and static positioning in CSS?</li>
+            <li>Explain the concept of specificity in CSS.</li>
+            <li>How do you center align an element horizontally and vertically in CSS?</li>
+            <li>What is a CSS preprocessor? Name some popular CSS preprocessors and their features.</li>
+            <li>What are CSS frameworks? Provide examples of some popular CSS frameworks.</li>
+            <li>Explain the concept of responsive web design and how CSS is used to achieve it.</li>
+            <li>What are CSS pseudo-elements and pseudo-classes? Provide examples.</li>
+            <li>What are vendor prefixes in CSS? Why are they used?</li>
+            <li>Describe the difference between CSS Grid and CSS Flexbox layout systems.</li>
+            <li>How do you implement animations and transitions in CSS?</li>
+            <li>What is the importance of media queries in CSS?</li>
+            <li>How can you optimize CSS performance on a website?</li>
+            <li>Discuss the importance of CSS specificity and inheritance in styling.</li>
+        </ol>
+    </div>
+    <h1>All the best for your future 😊😊</h1>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const correctAnswers = {
+        q1: 'A',
+        q2: 'B',
+        q3: 'B',
+        q4: 'A',
+        q5: 'A',
+        q6: 'A',
+        q7: 'D',
+        q8: 'A',
+        q9: 'A',
+        q10: 'A',
+        q11: 'A',
+        q12: 'A',
+        q13: 'A',
+        q14: 'A',
+        q15: 'A',
+        q16: 'C'
+        // Add more questions and answers here
+    };
+
+    // Calculate the total number of questions
+    const totalQuestions = Object.keys(correctAnswers).length;
+
+    // Function to clear all answers
+    function clearAnswers() {
+        const inputs = document.querySelectorAll('input[type="radio"]');
+        inputs.forEach(input => {
+            input.checked = false;
+        });
+    }
+        //Note show
+        document.getElementById('notes-btn').addEventListener('click', function() {
+            showNotesContent();
+        });
+
+        function showNotesContent() {
+            document.getElementById('notes-content').style.display = 'block';
+        }
+    // Function to show the quiz content
+    function showQuizContent() {
+        document.getElementById('quiz-content').style.display = 'block';
+    }
+
+    // Function to start the timer
+    function startTimer() {
+        const startTime = Date.now();
+        const timerDisplay = document.getElementById('timer');
+        const timerInterval = setInterval(() => {
+            const elapsedTime = Date.now() - startTime;
+            const minutes = Math.floor(elapsedTime / 60000);
+            const seconds = ((elapsedTime % 60000) / 1000).toFixed(0);
+            timerDisplay.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+        }, 1000);
+        return { startTime, timerInterval };
+    }
+
+    // Add event listener for the start button
+    document.getElementById('start-btn').addEventListener('click', function() {
+        showQuizContent();
+        const { startTime, timerInterval } = startTimer();
+        // Store the start time and timer interval ID so they can be used later
+        this.dataset.startTime = startTime;
+        this.dataset.timerIntervalId = timerInterval;
+    });
+
+    // Add event listener for the submit button
+    document.getElementById('submit-btn').addEventListener('click', function() {
+        // Check if all questions have been answered
+        const allQuestionsAnswered = Array.from(document.querySelectorAll('input[type="radio"]')).every(input => input.checked);
+        if (!allQuestionsAnswered) {
+            alert('Please answer all questions before submitting.');
+            return; // Exit the function if not all questions are answered
+        }
+
+        // Initialize the correct answers count
+        let correctAnswersCount = 0;
+
+        // Check each question
+        for (let question in correctAnswers) {
+            const userAnswer = document.querySelector(`input[name="${question}"]:checked`).value;
+            if (userAnswer === correctAnswers[question]) {
+                correctAnswersCount++;
+            }
+        }
+
+        // Calculate the elapsed time
+        const startTime = parseInt(this.dataset.startTime);
+        const elapsedTime = Date.now() - startTime;
+        const minutes = Math.floor(elapsedTime / 60000);
+        const seconds = ((elapsedTime % 60000) / 1000).toFixed(0);
+
+        // Display the results
+        document.getElementById('correct-answers').textContent = `Correct Answers: ${correctAnswersCount}`;
+        document.getElementById('total-questions').textContent = `Total Questions: ${totalQuestions}`;
+        document.getElementById('time-taken').textContent = `Time Taken: ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+
+        // Clear answers after submission
+        clearAnswers();
+
+        // Stop the timer
+        clearInterval(this.dataset.timerIntervalId);
+    });
+});
+
+</script>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplelearn // Web Development // Python</title>
+    <link rel="icon" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        iframe {
+            width: 800px;
+            height: 400px;
+            border: 2px solid rgb(93, 91, 91);
+        }
+        @media (max-width: 789px) {
+            iframe {
+                height: 200px;
+                width: 250px;
+            }
+        }
+        h1 {
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .html, #quiz-container, #results-container, .interview-questions{
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="main.html" title="Simple Learn Home">
+                <img src="logo.png" alt="Logo" title="Simple Learn Home" width="30" height="24" class="d-inline-block align-text-top">
+                Welcome
+            </a>
+        </div>
+    </nav>
+    <div class="html">
+        <h1>Python Tutorial</h1>
+        <h2>What Is Python?</h2>
+        <p>
+            Python is a high-level programming language known for its simplicity and readability. Guido van Rossum created Python in the late 1980s, and it has since become one of the most popular languages for various purposes, including web development, data analysis, artificial intelligence, scientific computing, and automation.
+        </p>
+        <p>
+            Python emphasizes code readability and simplicity, making it easier for programmers to express concepts in fewer lines of code compared to other languages. It features a dynamic type system and automatic memory management, which means developers don't have to worry about low-level details like memory allocation and deallocation.
+        </p>
+        <p>
+            One of Python's key strengths is its extensive standard library, which provides modules and packages for a wide range of tasks, from working with files and databases to web development and networking.
+        </p>
+        <p>
+            Additionally, Python has a vibrant ecosystem of third-party libraries and frameworks, such as Django and Flask for web development, NumPy and pandas for data analysis, TensorFlow and PyTorch for machine learning, and many more, making it highly versatile and suitable for various applications.
+        </p>
+        <h2>Why learn Python?</h2>
+        <p>Learning Java can be valuable for several reasons:</p>
+        <ol>
+            <li><b>Ease of Learning:</b> Python's simple and readable syntax makes it accessible to beginners. Its clear and concise code structure reduces the learning curve, allowing newcomers to quickly grasp fundamental programming concepts.</li>
+            <li><b>Versatility:</b> Python is a versatile language used in various domains, including web development, data science, machine learning, artificial intelligence, automation, scientific computing, and more. This versatility means that learning Python opens up a wide range of career opportunities and applications.</li>
+            <li><b>Strong Community and Resources:</b> Python has a vast and active community of developers who contribute to its ecosystem by creating libraries, frameworks, and resources. This community support ensures that developers have access to a wealth of learning materials, documentation, and support forums.</li>
+            <li><b>Extensive Libraries and Frameworks:</b> Python's rich ecosystem of libraries and frameworks simplifies development tasks. Whether you're building a website, analyzing data, training machine learning models, or automating tasks, there's likely a Python library or framework available to streamline the process.</li>
+            <li><b>High Demand in the Job Market:</b> Python's popularity has led to a high demand for developers proficient in the language. Many organizations across various industries seek Python developers for roles ranging from software development to data analysis and beyond. Learning Python can enhance your employability and open up job opportunities.</li>
+        </ol>
+        <div class="ratio ratio-16x9">
+            <img src="https://www.ntuclearninghub.com/documents/39367/4216797/Python-Symbol.png/369e410e-a90f-f887-c2dc-61f7ef761476/" alt="HTML">
+        </div><br><br>
+        <h2>Python Video Tutorial</h2><br>
+        <div class="ratio ratio-16x9">>
+        <iframe  src="https://www.youtube.com/embed/ITSMDeOgXxw?start=60" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+    </div>
+    <div id="quiz-container">
+        <h2>Python Quiz</h2>
+        <button id="start-btn" class="btn btn-success">Start Quiz</button>
+        <div id="quiz-content" style="display: none;">
+            <span>Timer: </span><span id="timer">00:00</span><br><br>
+            <div id="question1">
+                <p>1. What is the difference between list and tuple in Python?</p>
+                <input type="radio" name="q1" value="A"> A. Lists are mutable, while tuples are immutable.<br>
+                <input type="radio" name="q1" value="B"> B. Lists can contain elements of different data types, while tuples can only contain elements of the same data type.<br>
+                <input type="radio" name="q1" value="C"> C. There is no difference between lists and tuples.<br>
+            </div><br>
+            
+            <div id="question2">
+                <p>2. What is the purpose of the 'lambda' keyword in Python?</p>
+                <input type="radio" name="q2" value="A"> A. To define anonymous functions.<br>
+                <input type="radio" name="q2" value="B"> B. To create new instances of a class.<br>
+                <input type="radio" name="q2" value="C"> C. To access elements in a dictionary.<br>
+            </div><br>
+            
+            <div id="question3">
+                <p>3. What is the difference between '==', 'is', and 'isinstance()' in Python?</p>
+                <input type="radio" name="q3" value="A"> A. '==' compares object references, 'is' compares object values, and 'isinstance()' checks if an object is an instance of a specific class.<br>
+                <input type="radio" name="q3" value="B"> B. '==' compares object values, 'is' compares object references, and 'isinstance()' checks if an object is an instance of a specific class.<br>
+                <input type="radio" name="q3" value="C"> C. '==' compares object values, 'is' compares object references, and 'isinstance()' checks if two objects are the same instance.<br>
+            </div><br>
+            
+            <div id="question4">
+                <p>4. What is the purpose of the 'global' keyword in Python?</p>
+                <input type="radio" name="q4" value="A"> A. To define global variables within a function.<br>
+                <input type="radio" name="q4" value="B"> B. To access global variables from within a function.<br>
+                <input type="radio" name="q4" value="C"> C. To prevent variables from being modified globally.<br>
+            </div><br>
+            
+            <div id="question5">
+                <p>5. What is the difference between 'append()' and 'extend()' methods in Python lists?</p>
+                <input type="radio" name="q5" value="A"> A. 'append()' adds a single element to the end of the list, while 'extend()' adds multiple elements.<br>
+                <input type="radio" name="q5" value="B"> B. 'append()' adds multiple elements to the end of the list, while 'extend()' adds a single element.<br>
+                <input type="radio" name="q5" value="C"> C. There is no difference between 'append()' and 'extend()'.<br>
+            </div><br>
+            
+            <div id="question6">
+                <p>6. What is a decorator in Python?</p>
+                <input type="radio" name="q6" value="A"> A. A function that takes another function as an argument and adds some kind of functionality to it.<br>
+                <input type="radio" name="q6" value="B"> B. A function that takes a list of arguments and returns a single value.<br>
+                <input type="radio" name="q6" value="C"> C. A function that is called before another function.<br>
+            </div><br>
+            
+            <div id="question7">
+                <p>7. What is the purpose of the 'map()' function in Python?</p>
+                <input type="radio" name="q7" value="A"> A. To apply a function to each element in an iterable.<br>
+                <input type="radio" name="q7" value="B"> B. To filter elements from an iterable based on a function.<br>
+                <input type="radio" name="q7" value="C"> C. To combine elements from multiple iterables into a single iterable.<br>
+            </div><br>
+            
+            <div id="question8">
+                <p>8. What is the purpose of the 'with' statement in Python?</p>
+                <input type="radio" name="q8" value="A"> A. To handle exceptions.<br>
+                <input type="radio" name="q8" value="B"> B. To define a context within which resources are allocated and automatically released.<br>
+                <input type="radio" name="q8" value="C"> C. To define a loop to iterate over elements in an iterable.<br>
+            </div><br>
+            
+            <div id="question9">
+                <p>9. What is the difference between '==' and 'is' operators in Python?</p>
+                <input type="radio" name="q9" value="A"> A. '==' compares object values, while 'is' compares object references.<br>
+                <input type="radio" name="q9" value="B"> B. '==' compares object references, while 'is' compares object values.<br>
+                <input type="radio" name="q9" value="C"> C. '==' and 'is' are exactly the same and can be used interchangeably.<br>
+            </div><br>
+            
+            <div id="question10">
+                <p>10. What is the purpose of the 'yield' keyword in Python?</p>
+                <input type="radio" name="q10" value="A"> A. To define a generator.<br>
+                <input type="radio" name="q10" value="B"> B. To raise an exception.<br>
+                <input type="radio" name="q10" value="C"> C. To stop the execution of a function.<br>
+            </div><br>
+            
+            <div id="question11">
+                <p>11. What is the purpose of list comprehension in Python?</p>
+                <input type="radio" name="q11" value="A"> A. To create a new list based on existing lists or iterables.<br>
+                <input type="radio" name="q11" value="B"> B. To modify elements within an existing list.<br>
+                <input type="radio" name="q11" value="C"> C. To perform mathematical operations on lists.<br>
+            </div><br>
+            
+            <div id="question12">
+                <p>12. What is the difference between '==', 'is', and 'in' operators in Python?</p>
+                <input type="radio" name="q12" value="A"> A. '==' compares object values, 'is' compares object references, and 'in' checks if an element is present in a sequence.<br>
+                <input type="radio" name="q12" value="B"> B. '==' compares object references, 'is' compares object values, and 'in' checks if an element is present in a sequence.<br>
+                <input type="radio" name="q12" value="C"> C. '==' compares object values, 'is' compares object references, and 'in' checks if two objects are the same instance.<br>
+            </div><br>
+            
+            <div id="question13">
+                <p>13. What is the purpose of the 'format()' method in Python?</p>
+                <input type="radio" name="q13" value="A"> A. To format strings by inserting values into placeholders.<br>
+                <input type="radio" name="q13" value="B"> B. To convert strings to uppercase or lowercase.<br>
+                <input type="radio" name="q13" value="C"> C. To split strings into substrings based on a delimiter.<br>
+            </div><br>
+            
+            <div id="question14">
+                <p>14. What is the purpose of the 'zip()' function in Python?</p>
+                <input type="radio" name="q14" value="A"> A. To merge two or more lists into a single list of tuples.<br>
+                <input type="radio" name="q14" value="B"> B. To compress files into a zip archive.<br>
+                <input type="radio" name="q14" value="C"> C. To extract files from a zip archive.<br>
+            </div><br>
+            
+            <div id="question15">
+                <p>15. What is the purpose of the 'staticmethod' decorator in Python?</p>
+                <input type="radio" name="q15" value="A"> A. To define a method that can be called on a class itself, rather than on instances of the class.<br>
+                <input type="radio" name="q15" value="B"> B. To define a method that can only be called from within the class.<br>
+                <input type="radio" name="q15" value="C"> C. To define a method that can be overridden by subclasses.<br>
+            </div><br>
+            
+            <div id="question16">
+                <p>16. What is the purpose of the 'try-except' block in Python?</p>
+                <input type="radio" name="q16" value="A"> A. To handle exceptions that may occur in a block of code.<br>
+                <input type="radio" name="q16" value="B"> B. To define a loop that iterates over elements in an iterable.<br>
+                <input type="radio" name="q16" value="C"> C. To define a block of code that should always be executed, regardless of exceptions.<br>
+            </div><br>
+            
+            <div id="question17">
+                <p>17. What is the purpose of the 'assert' statement in Python?</p>
+                <input type="radio" name="q17" value="A"> A. To check if a condition is true and raise an exception if it's not.<br>
+                <input type="radio" name="q17" value="B"> B. To define a block of code that should always be executed, regardless of exceptions.<br>
+                <input type="radio" name="q17" value="C"> C. To define a loop that iterates over elements in an iterable.<br>
+            </div><br>
+            
+            <div id="question18">
+                <p>18. What is the purpose of the 'del' statement in Python?</p>
+                <input type="radio" name="q18" value="A"> A. To remove an item from a list or dictionary.<br>
+                <input type="radio" name="q18" value="B"> B. To define a block of code that should always be executed, regardless of exceptions.<br>
+                <input type="radio" name="q18" value="C"> C. To define a loop that iterates over elements in an iterable.<br>
+            </div><br>
+            
+            <div id="question19">
+                <p>19. What is the purpose of the 'break' statement in Python?</p>
+                <input type="radio" name="q19" value="A"> A. To exit a loop prematurely.<br>
+                <input type="radio" name="q19" value="B"> B. To define a block of code that should always be executed, regardless of exceptions.<br>
+                <input type="radio" name="q19" value="C"> C. To skip the current iteration of a loop and continue with the next iteration.<br>
+            </div><br>
+            
+            <div id="question20">
+                <p>20. What is the purpose of the 'continue' statement in Python?</p>
+                <input type="radio" name="q20" value="A"> A. To skip the current iteration of a loop and continue with the next iteration.<br>
+                <input type="radio" name="q20" value="B"> B. To exit a loop prematurely.<br>
+                <input type="radio" name="q20" value="C"> C. To define a block of code that should always be executed, regardless of exceptions.<br>
+            </div><br>
+            
+            <div class="d-flex justify-content-center align-items-center">
+                <button id="submit-btn" class="btn btn-info">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div id="results-container" style="display: none;">
+        <h2>Results</h2>
+        <p id="correct-answers">Correct Answers: 0</p>
+        <p id="total-questions">Total Questions: 0</p>
+        <p id="time-taken">Time Taken: 00:00</p>
+    </div>
+    <div class="interview-questions">
+        <h2>Additional Python Interview Questions</h2>
+        <ol>
+            <li>What is Python?</li>
+            <li>What are the key features of Python?</li>
+            <li>Explain the difference between Python 2 and Python 3.</li>
+            <li>What are tuples, lists, and dictionaries in Python?</li>
+            <li>Explain the concept of list comprehension in Python.</li>
+            <li>What is object-oriented programming (OOP) and how does Python support it?</li>
+            <li>Describe inheritance and polymorphism in Python.</li>
+            <li>What are decorators in Python, and how are they used?</li>
+            <li>Explain the concept of generators in Python.</li>
+            <li>What is the purpose of the 'with' statement in Python?</li>
+        </ol>
+        <button id="click-show" class="btn btn-danger" onclick="toggleAnswers()">
+            Show answers
+        </button> <br>
+    <div id="show-answers" style="display: none;"><br><br>
+        <h2>Interview questions with answers</h2>
+        <ol>
+            <li><b>What is Python?</b></li>
+            <ul>
+                <li>Python is a high-level, interpreted programming language known for its simplicity and readability. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.</li>
+            </ul>
+            <li><b>What are the key features of Python?</b></li>
+            <ul>
+                <li> Key features of Python include its simple and easy-to-learn syntax, dynamic typing, automatic memory management (garbage collection), extensive standard library, and support for third-party libraries and frameworks.</li>
+            </ul>
+            <li><b>Explain the difference between Python 2 and Python 3.</b></li>
+            <ul>
+                <li>Python 2 and Python 3 are two major versions of the Python programming language. Python 3 introduced several backward-incompatible changes to improve the language's consistency and remove redundancy. Some key differences include the print statement becoming a function, integer division returning a float by default, and the adoption of Unicode as the default string type.</li>
+            </ul>
+            <li><b>What are tuples, lists, and dictionaries in Python?</b></li>
+            <ul>
+                <li>Tuples, lists, and dictionaries are three types of data structures in Python. Tuples are immutable sequences of elements, lists are mutable sequences, and dictionaries are unordered collections of key-value pairs.</li>
+            </ul>
+            <li><b>Explain the concept of list comprehension in Python.</b></li>
+            <ul>
+                <li>List comprehension is a concise way to create lists in Python by applying an expression to each item in an iterable. It provides a more readable and compact alternative to traditional for loops.</li>
+            </ul>
+            <li><b>What is object-oriented programming (OOP) and how does Python support it?</b></li>
+            <ul>
+                <li>Object-oriented programming is a programming paradigm based on the concept of "objects," which can contain data (attributes) and code (methods). Python supports OOP principles such as encapsulation, inheritance, and polymorphism through its class and object system.</li>
+            </ul>
+            <li><b>Describe inheritance and polymorphism in Python.</b></li>
+            <ul>
+                <li> Inheritance is a mechanism in which a new class (subclass) is created based on an existing class (superclass), inheriting its attributes and methods. Polymorphism allows objects of different classes to be treated as objects of a common superclass, enabling flexibility and code reusability.</li>
+            </ul>
+            <li><b>What are decorators in Python, and how are they used?</b></li>
+            <ul>
+                <li>Decorators are functions that modify the behavior of other functions or methods. They are typically used to add functionality to existing functions without modifying their code directly, such as adding logging, authentication, or caching.</li>
+            </ul>
+            <li><b>Explain the concept of generators in Python.</b></li>
+            <ul>
+                <li>Generators are functions that can generate a sequence of values lazily, one at a time, using the yield statement. They are memory-efficient compared to lists because they generate values on-the-fly rather than storing them in memory.</li>
+            </ul>
+            <li><b>What is the purpose of the 'with' statement in Python?</b></li>
+            <ul>
+                <li>The 'with' statement in Python is used to ensure that a resource is properly managed and released, such as file I/O or database connections. It automatically handles the opening and closing of resources within a block of code, ensuring cleanup even if an exception occurs.</li>
+            </ul>
+        </ol>
+    </div>
+</div>
+<script>
+    const correctAnswers = {
+        q1: 'A',
+        q2: 'A',
+        q3: 'A',
+        q4: 'A',
+        q5: 'A',
+        q6: 'A',
+        q7: 'A',
+        q8: 'A',
+        q9: 'A',
+        q10: 'A',
+        q11: 'A',
+        q12: 'A',
+        q13: 'A',
+        q14: 'A',
+        q15: 'A',
+        q16: 'A',
+        q17: 'A',
+        q18: 'A',
+        q19: 'A',
+        q20: 'A'
+    };
+
+    document.getElementById('start-btn').addEventListener('click', function() {
+        document.getElementById('quiz-content').style.display = 'block';
+        startTimer();
+    });
+
+    function startTimer() {
+        let timer = document.getElementById('timer');
+        let totalSeconds = 0;
+        setInterval(function() {
+            ++totalSeconds;
+            let minutes = Math.floor(totalSeconds / 60);
+            let seconds = totalSeconds % 60;
+            timer.innerText = pad(minutes) + ':' + pad(seconds);
+        }, 1000);
+    }
+
+    function pad(val) {
+        let valString = val + '';
+        if (valString.length < 2) {
+            return '0' + valString;
+        } else {
+            return valString;
+        }
+    }
+
+    document.getElementById('submit-btn').addEventListener('click', function() {
+        document.getElementById('quiz-content').style.display = 'block';
+        document.getElementById('results-container').style.display = 'block';
+
+        let totalQuestions = 20;
+        let userAnswers = {};
+        let correctAnswersCount = 0;
+
+        for (let i = 1; i <= totalQuestions; i++) {
+            let questionId = 'q' + i;
+            let selectedOption = document.querySelector('input[name="' + questionId + '"]:checked');
+            if (selectedOption) {
+                userAnswers[questionId] = selectedOption.value;
+            }
+        }
+
+        for (let questionId in userAnswers) {
+            if (userAnswers.hasOwnProperty(questionId)) {
+                if (userAnswers[questionId] === correctAnswers[questionId]) {
+                    correctAnswersCount++;
+                }
+            }
+        }
+
+        document.getElementById('correct-answers').innerText = 'Correct Answers: ' + correctAnswersCount;
+        document.getElementById('total-questions').innerText = 'Total Questions: ' + totalQuestions;
+
+        let timer = document.getElementById('timer').innerText;
+        document.getElementById('time-taken').innerText = 'Time Taken: ' + timer;
+    });
+    function toggleAnswers() {
+        var answers = document.getElementById("show-answers");
+        var button = document.getElementById("click-show");
+        if (answers.style.display === "none") {
+            answers.style.display = "block";
+            button.innerText = "Hide answers";
+        } else {
+            answers.style.display = "none";
+            button.innerText = "Show answers";
+        }
+    }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-dl2vgS6LoCBqIJNZzm2M2dcKFc5RZLtf3ZhxxvH4ZCkD51HPXcgRc9wnTj46K65r" crossorigin="anonymous"></script>
+</body>
+</html>
