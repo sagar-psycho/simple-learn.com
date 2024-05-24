@@ -39,6 +39,7 @@ document.getElementById('mathsbtn').addEventListener('click', showLoginPopup);
 document.getElementById('webbtn').addEventListener('click', showLoginPopup);
 document.getElementById('loginBtn').addEventListener('click', showLoginPopup);
 document.getElementById('digitalbtm').addEventListener('click', showLoginPopup);
+document.getElementById('mernbtm').addEventListener('click', showLoginPopup);
 // Add event listener to the ai-login button for showing the login popup
 
 
